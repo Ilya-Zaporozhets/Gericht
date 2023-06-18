@@ -8,7 +8,8 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build",
+    "deployFTP": "gulp deployFTP --build",
+    "deploy": "gh-pages -d docs",
     "svgSprive": "gulp svgSprive"
   },
   "author": "Ilya.Zaporojec@gmail.com",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
+    "gh-pages": "^5.0.0",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-avif": "^1.1.1",
