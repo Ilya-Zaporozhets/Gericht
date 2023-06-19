@@ -1,6 +1,7 @@
 node_modules/
-docs
-gulp
+package-lock.json
+.prettierrc.json
 gulpfile.js
 package.json
-package-lock.json
+gulp
+
