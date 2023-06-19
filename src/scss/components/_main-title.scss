@@ -1,0 +1,8 @@
+.main-title {
+    @include font-title;
+    color: var(--main-color);
+}
+.main-subtitle{
+    @include font-subtitle;
+    color: var(--title-text-color);
+}
