@@ -70,9 +70,11 @@
     &__text {
         margin-top: 64px;
         width: 570px;
+
+        font-style: italic;
         font-family: var(--main-fonts);
         @include font-text;
-        color: var(--title-text-color);
+        color: var(--primary-text-color);
         span {
             
             display: flex;
