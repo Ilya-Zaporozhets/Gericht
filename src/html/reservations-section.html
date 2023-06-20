@@ -1,0 +1,40 @@
+<section class="reservations">
+    <div class="reservations__wrapper container">
+        <h3 class="reservations__subtitle main-subtitle">Reservations</h3>
+        <svg class="reservations__icon icon-spoon">
+            <use href="./img/icons.svg#spoon"></use>
+        </svg>
+        <h4 class="reservations__title main-title">Book A Table</h4>
+        <form action=""class="reservations-form">
+            <div class="reservations-form__inner">
+                <select id="person" name="peron" class="reservations-form__item">
+                    <option value="1" selected>1 Person</option>
+                    <option value="2">2 Person</option>
+                    <option value="4">4 Person</option>
+                    <option value="6">6 Person</option>
+                    <option value="8">8 Person</option>
+                </select>
+                <svg class="reservations-form__icon">
+                  <use href="./img/icons.svg#arrow-down"></use>
+                </svg>
+            </div>
+            <div id="app" class="reservations-form__inner">
+                <input type="date" name="date" class="reservations-form__item">
+                <!-- <input type="text" class="reservations-form__item datepicker" v-model="value"> -->
+                <svg class="reservations-form__icon">
+                    <use href="./img/icons.svg#arrow-down"></use>
+                </svg>
+            </div>
+            <div class="reservations-form__inner">
+                <input type="time" name="time" class="reservations-form__item" />
+                <svg class="reservations-form__icon">
+                    <use href="./img/icons.svg#arrow-down"></use>
+                </svg>
+            </div>
+        </form>
+        <button type="submit" class="reservations__btn main-btn">Book Now</button>
+        <svg class="reservations__logo">
+          <use href="./img/icons.svg#logo"></use>
+        </svg>
+    </div>
+</section>

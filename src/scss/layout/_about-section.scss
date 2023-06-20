@@ -92,9 +92,6 @@
     }
     &__icon {
         margin-top: 8px;
-        display: block;
-        width: 40px;
-        height: 9px;
         &.left {
             transform: rotate(180deg);
         }
@@ -110,6 +107,6 @@
         padding: 8px 28px;
         width: 141px;
         font-family: var(--title-fonts);
-        @include font-text;
+        @include font-text($fw: 700);
     }
 }
