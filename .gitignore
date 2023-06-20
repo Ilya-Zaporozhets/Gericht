@@ -3,5 +3,6 @@ package-lock.json
 .prettierrc.json
 gulpfile.js
 package.json
-gulp
+gulp/
 docs
+gulp
