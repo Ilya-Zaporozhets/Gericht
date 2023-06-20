@@ -1,11 +1,11 @@
-@mixin font-title($ff: var(--CormorantUpright-Regular), $fw: 600,$fs: 64px,$lh: 83px, $ls: 0.03em) {
+@mixin font-title($ff: var(--secondary-fonts), $fw: 600,$fs: 64px,$lh: 83px, $ls: 0.03em) {
     font-family: $ff;
     font-weight: $fw;
     font-size: $fs;
     line-height: calc($lh/$fs);
     letter-spacing: $ls;
 }
-@mixin font-subtitle($ff: var(--CormorantUpright-Regular), $fw: 700, $fs: 23px, $lh: 30px, $ls: 0.04em) {
+@mixin font-subtitle($ff: var(--title-fonts), $fw: 700, $fs: 23px, $lh: 30px, $ls: 0.04em) {
     font-family: $ff;
     font-weight: $fw;
     font-size: $fs;

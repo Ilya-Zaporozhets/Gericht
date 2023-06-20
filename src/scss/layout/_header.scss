@@ -1,0 +1,75 @@
+.header {
+    background-color: var(--bcg-color);
+    &__wrapper {
+        margin: auto;
+        padding: 32px 120px 32px 120px;
+
+        max-width: 1680px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo-link {
+    @include font-title($fw: 700, $fs: 44px, $lh: 57px, $ls: 0.04em);
+    color: var(--title-text-color);
+}
+.navigation {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    &__link {
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: var(--title-text-color);
+        transition: var(--transition-property);
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+    }
+}
+.login-frame {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: var(--title-text-color);
+    }
+    &__button {
+        border: 0;
+        background-color: transparent;
+
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: var(--title-text-color);
+        cursor: pointer;
+
+        &:hover span {
+            opacity: 0.6;
+        }
+        span {
+            transition: var(--transition-property);
+        }
+
+    }
+    &__icon {
+        display: block;
+        width: 1px;
+        height: 57px;
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 58.85%, rgba(255, 255, 255, 0) 100%);
+        border-image-source: radial-gradient(50% 50% at 50% 50%, #FFFFFF 58.85%, rgba(255, 255, 255, 0) 100%);
+        opacity: 0.6;
+    }
+}
