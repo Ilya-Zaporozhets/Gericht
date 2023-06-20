@@ -1,8 +1,9 @@
-import { addBackToTop } from 'vanilla-back-to-top';
+import { addBackToTop } from "vanilla-back-to-top";
 
 addBackToTop({
-  diameter: 35,
-  backgroundColor: var(--bcg-color),
-  textColor: var(--main-color),
+  diameter: 25,
+  backgroundColor: "#dcca87",
+  textColor: " #0c0b08",
+
   scrollDuration: 500,
 });
