@@ -5,8 +5,14 @@
   align-items: center;
   padding: 8px 32px;
 
-  width: 129px;
-  height: 44px;
+  font-family: var(--title-fonts);
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  cursor: pointer;
+  
+  color: #0c0b08;
 
   background: var(--main-color);
 
