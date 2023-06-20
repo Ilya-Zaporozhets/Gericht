@@ -37,13 +37,14 @@
 
     &::before {
         content: '';
+        margin: auto;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
-        width: 412px;
-        height: 619px;
+        width: 33%;
+        height: 100%;
 
         background-image:
                 -webkit-image-set(url("../img/menu-img@2x.avif") type("image/avif") 2x,

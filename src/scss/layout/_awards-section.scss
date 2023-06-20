@@ -42,13 +42,16 @@
         // background-position: right;
         z-index: 0;
         &:before {
+            margin: auto;
             position: absolute;
             content: '';
             top: 0;
             right: 0;
             display: block;
-            height: 691px;
-            width: 483px;
+            // height: 691px;
+            height: 100%;
+            // width: 483px;
+            width: 37.2%;
 
             background-image: -webkit-image-set(url("../img/awards-img@2x.avif") type("image/avif") 2x,
                         url("../img/awards-img.avif") type("image/avif") 1x,
@@ -66,7 +69,7 @@
             background-repeat: no-repeat;
             background-position: right;
 
-            border: 2px solid rgba(220, 202, 135, 0.2);
+            // border: 2px solid rgba(220, 202, 135, 0.2);
             z-index: -1;
         }
         &::after {
@@ -74,10 +77,13 @@
             content: '';
         
             bottom: 0px;
-            right: 195px;
+            // right: 195px;
+            right: 15%;
         
-            width: 360px;
-            height: 379px;
+            // width: 360px;
+            width: 27.69%;
+            // height: 379px;
+            height: 54.85%;
         
             background-image:
                 -webkit-image-set(url("../img/awards-g@2x.avif") type("image/avif") 2x,
