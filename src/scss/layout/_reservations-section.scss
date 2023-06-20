@@ -62,6 +62,7 @@
 
         font-family: var(--secondary-fonts);
         @include font-text($fw: 600);
+        font-feature-settings: 'tnum' on, 'lnum' on;
         color: var(--primary-text-color);
 
         appearance: none;

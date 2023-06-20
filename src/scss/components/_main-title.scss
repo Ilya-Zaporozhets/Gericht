@@ -1,8 +1,10 @@
 .main-title {
     @include font-title;
+    font-feature-settings: 'tnum' on, 'lnum' on;
     color: var(--main-color);
 }
 .main-subtitle{
     @include font-subtitle;
+    font-feature-settings: 'tnum' on, 'lnum' on;
     color: var(--title-text-color);
 }
