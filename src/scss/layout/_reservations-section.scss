@@ -25,7 +25,9 @@
     }
     &__btn {
         margin-top: 64px;
+        padding: 8px 24px;
         width: 135px;
+        text-align: center;
         font-family: var(--title-fonts);
         @include font-text($fw: 700);
     }
