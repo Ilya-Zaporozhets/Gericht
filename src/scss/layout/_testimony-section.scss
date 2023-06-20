@@ -4,6 +4,7 @@
     
     background-color: var(--bcg-color);
     &__wrapper {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -14,6 +15,15 @@
 
     &__title {
         margin-top: 8px;
+    }
+    &__logo {
+        position: absolute;
+        top: -202px;
+        right: -23px;
+    
+        display: block;
+        width: 146px;
+        height: 146px;
     }
 }
 .customers-list {
