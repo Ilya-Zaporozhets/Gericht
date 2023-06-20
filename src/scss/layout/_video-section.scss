@@ -1,10 +1,12 @@
 .video {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 40%;
+  background-color: var(--bcg-color);
 
-  background-color: rgba(0, 0, 0, 0.4);
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 40%;
+  }
 
   .video-player {
     position: absolute;
