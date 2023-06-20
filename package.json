@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "gulp-version-number": "latest",
-    "mkdirp": "^1.0.4"
+    "mkdirp": "^1.0.4",
+    "vanilla-back-to-top": "^7.2.1"
   }
 }
