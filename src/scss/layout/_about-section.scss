@@ -107,5 +107,6 @@
         width: 141px;
         font-family: var(--title-fonts);
         @include font-text($fw: 700);
+        cursor: pointer;
     }
 }

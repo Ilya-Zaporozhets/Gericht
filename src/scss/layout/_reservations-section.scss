@@ -30,6 +30,7 @@
         text-align: center;
         font-family: var(--title-fonts);
         @include font-text($fw: 700);
+        cursor: pointer;
     }
     &__logo {
         position: absolute;
@@ -66,7 +67,7 @@
         color: var(--primary-text-color);
 
         appearance: none;
-
+        
         &::-webkit-calendar-picker-indicator {
             position: absolute;
             top: 0;

@@ -1,0 +1,82 @@
+.testimony {
+    padding-top: 152px;
+    padding-bottom: 152px;
+    
+    background-color: var(--bcg-color);
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon {
+        margin-top: 8px;
+    }
+
+    &__title {
+        margin-top: 8px;
+    }
+    &__logo {
+        position: absolute;
+        top: -202px;
+        right: -23px;
+    
+        display: block;
+        width: 146px;
+        height: 146px;
+    }
+}
+.customers-list {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 64px;
+
+    &__item {
+        position: relative;
+        width: calc((100% - 16px)/2);
+
+        display: flex;
+        gap: 32px;
+    }
+    &__apostrophe {
+        position: absolute;
+        bottom: 0;
+        left: 159px;
+        display: block;
+
+        width: 47px;
+        height: 40px;
+    }
+    &__inner {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 412px;
+    }
+    &__text {
+        font-family: var(--main-fonts);
+        font-style: italic;
+        @include font-text;
+        color: var(--primary-text-color);
+    }
+    &__name {
+        margin-top: 16px;
+        font-family: var(--CormorantUpright-Regular);
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.3;
+    
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: var(--main-color);
+    }
+    &__prof {
+        margin-top: 4px;
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: var(--primary-text-color);
+    }
+}
