@@ -56,9 +56,8 @@ const initializeDatepicker = () => {
   // Вызов функции для вставки текущей даты
   insertCurrentDate();
 
-  // Вызов функции при загрузке страницы и при изменении размеров окна
+  // Вызов функции при загрузке страницы
   $(document).ready(adjustDatepickerSize);
-  $(window).resize(adjustDatepickerSize);
 };
 
 // Вызов функции для инициализации Datepicker
