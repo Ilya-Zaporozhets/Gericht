@@ -97,3 +97,88 @@
         }
     }
 }
+// ============================================================================ DATEPICKER ========================================================
+/* Изменение фона Datepicker */
+.ui-state-default {
+    background-color: transparent;
+}
+.ui-datepicker {
+    background-color: #0C0C0C;
+}
+
+
+
+/* Изменение цвета выходных дней */
+.ui-datepicker .ui-datepicker-week-end .ui-state-default {
+    color: #FFF;
+}
+
+
+// header datepiker
+.ui-datepicker .ui-datepicker-header {
+    background-color: var(--main-color);
+}
+.ui-datepicker-calendar {
+    background-color: #0C0C0C;
+    tr {
+        color: #F5EFDB;
+    }
+}
+.ui-datepicker { 
+    table{
+        border: 1px solid var(--main-color);
+    } 
+}
+/* Изменение цвета и стиля текста дат */
+.ui-datepicker .ui-state-default {
+    font-family: var(--secondary-fonts);
+    @include font-text($fw: 600);
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: var(--primary-text-color);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid var(--primary-text-color);
+    background-color: #0C0C0C;
+    color: var(--title-text-color);
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 1px solid #c5c5c5;
+    background: transparent;
+    font-weight: normal;
+    color: var(--title-text-color);
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid var(--main-color);
+    background: #141414;
+    font-weight: normal;
+    color: var(--main-color);
+}
+.ui-datepicker-week-end {
+    .ui-state-default {
+        background-color: #141414;
+    }
+}
+.ui-state-hover {
+    opacity: 0.5;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid transparent;
+}
+
+// ============================================================================ DATEPICKER END ========================================================
