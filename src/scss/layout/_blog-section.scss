@@ -1,0 +1,87 @@
+.blog {
+    padding-top: 152px;
+    padding-bottom: 160px;
+
+    background-color: var(--bcg-color);
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon {
+        margin-top: 8px;
+    }
+
+    &__title {
+        margin-top: 8px;
+    }
+    &__list {
+        margin-top: 64px;
+        display: flex;
+        gap: 32px;
+    }
+    &__item {
+        width: calc((100% - 64px)/3);
+    }
+    &__logo {
+        position: absolute;
+        bottom: -130px;
+        right: 0px;
+
+        display: block;
+        width: 146px;
+        height: 146px;
+    }
+    &__link {
+        margin-top: 64px;
+    }
+}
+.blog-content {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__date {
+        display: flex;
+        justify-content: space-between;
+
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: #FAFAFA;
+    }
+    &__title {
+        font-family: var(--CormorantUpright-Regular);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.3;
+    
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+
+        color: var(--main-color);
+        transition: var(--transition-property);
+        
+        .blog__item:hover &,
+        .blog__item:focus & {
+            text-decoration: solid underline var(--main-color) 2px;
+        }
+    }
+    &__text {
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: var(--primary-text-color);
+    }
+    &__link {
+        font-family: var(--title-fonts);
+        @include font-text($fw: 700);
+        color: var(--main-color);
+        transition: var(--transition-property);
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+        }
+    }
+}
