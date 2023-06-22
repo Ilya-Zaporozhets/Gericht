@@ -1,60 +1,95 @@
-const regex = /^(0[1-9]|1[012]|[1-12])(|\/|\.)(0[1-9]|[12][0-9]|3[01]|[1-9])(|\/|\.)(((19|20)\d\d)|(\d\d)$)/gm;
+const initializeDatepicker = () => {
+  // Функция для вставки текущей даты в placeholder
+  const insertCurrentDate = () => {
+    const currentDate = new Date();
+    const day = currentDate.getDate();
+    const month = currentDate.getMonth() + 1; // Месяцы в JavaScript начинаются с 0
+    const year = currentDate.getFullYear();
 
-function ExtractDate(date) {
-  if (typeof date === "object") return date;
-  const a = regex.exec(date);
-  if (!a) return;
+    // Форматирование даты в виде "dd/mm/yyyy"
+    const formattedDate = `${day < 10 ? '0' + day : day}/${month < 10 ? '0' + month : month}/${year}`;
 
-  let mm = +a[1], dd = +a[3], yy = +a[5];
-  mm = mm < 10 ? "0" + mm : mm; 
-  dd = dd < 10 ? "0" + dd : dd;
-  yy = yy.toString().length === 4 ? yy : 30 < yy && yy < 100 ? 1900 + yy : 2000 + yy;
-
-  return {
-    mm,
-    dd,
-    yy,
-    date: new Date(+yy, (+mm - 1), (+dd))
+    // Установка отформатированной даты в значение placeholder
+    document.querySelector(".datepicker").placeholder = formattedDate;
   };
-}
 
-const app = new Vue({
-  el: '#app',
-  data() {
-    return {
-      value: setCurrentDate()
-    }
-  }
-});
-
-function setCurrentDate() {
-  const currentDate = new Date();
-  const day = currentDate.getDate().toString().padStart(2, '0');
-  const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
-  const year = currentDate.getFullYear().toString();
-
-  return `${month}/${day}/${year}`;
-}
-
-$(".datepicker").datepicker({
-  format: {
-    toDisplay(date, format, language) {
-      console.log('>', date);
-      if (typeof date === "object") {
-        let mm = date.getMonth() + 1, dd =  date.getDate(), yy = date.getFullYear();
-        mm = mm < 10 ? "0" + mm : mm; 
-        dd = dd < 10 ? "0" + dd : dd;
-        return [mm, dd, yy].join("/");
-      }
-      console.log('>>', date, mm, dd, yy);
-      return date;
+  // Инициализация Datepicker
+  const today = new Date(); // Получение текущей даты
+  $("#calendar").datepicker({
+    dateFormat: 'dd/mm/yy',
+    closeText: "Close",
+    prevText: "<Prev",
+    nextText: "Next>",
+    currentText: "Today",
+    monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    weekHeader: "Sm",
+    firstDay: 1,
+    beforeShow: function(input, inst) {
+      inst.dpDiv.css({
+         left: "50%",
+        transform: "translateX(-50%) translateX(-${datepickerWidth / 2}px)"
+      });
     },
-    toValue(date, format, language) {
-      console.log('+', date);
-      const d = ExtractDate(date);
-      if (!d) return;
-      console.log("toValue:", d);
-      return d.date;
-    }
-  }
-});
+    autoSize: true,
+    minDate: today // Ограничение выбора предыдущих дат
+  });
+
+  // Вызов функции для вставки текущей даты
+  insertCurrentDate();
+};
+
+// Вызов функции для инициализации Datepicker
+initializeDatepicker();
+
+// ====================================================================================================
+
+// ========================================================== TIMEPICKER ====================================================================
+
+const initializeTimepicker = () => {
+  // Функция для вставки текущего времени в placeholder
+  const insertCurrentTime = () => {
+    const currentTime = new Date();
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+
+    // Форматирование времени в виде "HH:mm"
+    const formattedTime = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
+
+    // Установка отформатированного времени в значение placeholder
+    document.querySelector(".timepicker").placeholder = formattedTime;
+  };
+
+  // Инициализация Timepicker
+  const now = new Date(); // Получение текущего времени
+  $("#time").timepicker({
+    timeFormat: 'HH:mm', // Формат времени в 24-часовом формате
+    interval: 30,
+    defaultTime: '12:00',
+    closeOnSelect: true,
+    beforeShow: function(input, inst) {
+      const inputRect = input.getBoundingClientRect();
+      const inputWidth = inputRect.width;
+      const inputHeight = inputRect.height;
+
+      inst.dpDiv.css({
+        width: inputWidth + "px",
+        height: inputHeight + "px",
+        top: "auto",
+        bottom: "100%",
+        left: "50%",
+        transform: "translateX(-50%)"
+      });
+    },
+    minTime: now // Ограничение выбора предыдущего времени
+  });
+
+  // Вызов функции для вставки текущего времени
+  insertCurrentTime();
+};
+
+// Вызов функции для инициализации Timepicker
+initializeTimepicker();

@@ -5,4 +5,4 @@ import "./modules/video.js";
 import "./modules/back-to-top-btn.js";
 import "./modules/slick.js";
 import "./modules/slaider.js";
-import "./modules/gallery-slider.js";
+import "./modules/datepicker.js";
