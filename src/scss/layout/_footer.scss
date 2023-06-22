@@ -74,7 +74,7 @@
     }
     &__input {
         padding: 16px 19px;
-        width: 100%;
+        flex-grow: 1;
         background-color: transparent;
 
         font-family: var(--secondary-fonts);
@@ -93,8 +93,11 @@
         }
     }
     &__btn {
+        display: block;
+        padding: 8px 24px;
         width: 129px;
         height: 44px;
+        text-align: center;
     }
     &__logo {
         position: absolute;
