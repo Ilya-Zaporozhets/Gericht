@@ -22,9 +22,6 @@
         padding: 8px 24px;
         width: 136px;
         text-align: center;
-        font-family: var(--title-fonts);
-        @include font-text($fw: 700);
-        color: #0C0C0C;
     }
 }
 .menu-list {
