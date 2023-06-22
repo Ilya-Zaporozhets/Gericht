@@ -14,6 +14,7 @@ const initializeDatepicker = () => {
   };
 
   // Инициализация Datepicker
+  const today = new Date(); // Получение текущей даты
   $("#calendar").datepicker({
     dateFormat: 'dd/mm/yy',
     closeText: "Close",
@@ -34,6 +35,7 @@ const initializeDatepicker = () => {
       });
     },
     autoSize: true,
+    minDate: today // Ограничение выбора предыдущих дат
   });
 
   // Вызов функции для вставки текущей даты
@@ -42,4 +44,52 @@ const initializeDatepicker = () => {
 
 // Вызов функции для инициализации Datepicker
 initializeDatepicker();
-// =============================================================================================
+
+// ====================================================================================================
+
+// ========================================================== TIMEPICKER ====================================================================
+
+const initializeTimepicker = () => {
+  // Функция для вставки текущего времени в placeholder
+  const insertCurrentTime = () => {
+    const currentTime = new Date();
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+
+    // Форматирование времени в виде "HH:mm"
+    const formattedTime = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
+
+    // Установка отформатированного времени в значение placeholder
+    document.querySelector(".timepicker").placeholder = formattedTime;
+  };
+
+  // Инициализация Timepicker
+  const now = new Date(); // Получение текущего времени
+  $("#time").timepicker({
+    timeFormat: 'HH:mm', // Формат времени в 24-часовом формате
+    interval: 30,
+    defaultTime: '12:00',
+    closeOnSelect: true,
+    beforeShow: function(input, inst) {
+      const inputRect = input.getBoundingClientRect();
+      const inputWidth = inputRect.width;
+      const inputHeight = inputRect.height;
+
+      inst.dpDiv.css({
+        width: inputWidth + "px",
+        height: inputHeight + "px",
+        top: "auto",
+        bottom: "100%",
+        left: "50%",
+        transform: "translateX(-50%)"
+      });
+    },
+    minTime: now // Ограничение выбора предыдущего времени
+  });
+
+  // Вызов функции для вставки текущего времени
+  insertCurrentTime();
+};
+
+// Вызов функции для инициализации Timepicker
+initializeTimepicker();
