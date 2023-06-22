@@ -1,16 +1,4 @@
 const initializeDatepicker = () => {
-  // Функция для подстройки размеров Datepicker
-  const adjustDatepickerSize = () => {
-    const input = document.getElementById("calendar");
-    const inputRect = input.getBoundingClientRect();
-    const inputWidth = inputRect.width;
-    const inputHeight = inputRect.height;
-
-    $(".datepicker").datepicker("option", "beforeShow", function (input, inst) {
-      inst.dpDiv.css({ width: inputWidth, height: inputHeight });
-    });
-  };
-
   // Функция для вставки текущей даты в placeholder
   const insertCurrentDate = () => {
     const currentDate = new Date();
@@ -41,24 +29,17 @@ const initializeDatepicker = () => {
     firstDay: 1,
     beforeShow: function(input, inst) {
       inst.dpDiv.css({
-        top: "auto",
-        bottom: "100%",
-        left: "50%",
-        transform: "translateX(-50%)"
+         left: "50%",
+        transform: "translateX(-50%) translateX(-${datepickerWidth / 2}px)"
       });
     },
     autoSize: true,
   });
 
-  // Вызов функции для подстройки размеров Datepicker
-  adjustDatepickerSize();
-
   // Вызов функции для вставки текущей даты
   insertCurrentDate();
-
-  // Вызов функции при загрузке страницы
-  $(document).ready(adjustDatepickerSize);
 };
 
 // Вызов функции для инициализации Datepicker
 initializeDatepicker();
+// =============================================================================================

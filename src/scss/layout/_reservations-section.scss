@@ -98,6 +98,11 @@
     }
 }
 // ============================================================================ DATEPICKER ========================================================
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix {
+    width: 29.0%;
+    max-width: 379px;
+    padding: 8px;
+}
 /* Изменение фона Datepicker */
 .ui-state-default {
     background-color: transparent;
@@ -105,15 +110,10 @@
 .ui-datepicker {
     background-color: #0C0C0C;
 }
-
-
-
 /* Изменение цвета выходных дней */
 .ui-datepicker .ui-datepicker-week-end .ui-state-default {
-    color: #FFF;
+    background-color: rgb(34, 33, 33);
 }
-
-
 // header datepiker
 .ui-datepicker .ui-datepicker-header {
     background-color: var(--main-color);
@@ -126,7 +126,7 @@
 }
 .ui-datepicker { 
     table{
-        border: 1px solid var(--main-color);
+        border: 1px solid var(--primary-text-color);
     } 
 }
 /* Изменение цвета и стиля текста дат */
@@ -138,7 +138,6 @@
     text-transform: capitalize;
     text-align: center;
 }
-
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
@@ -146,7 +145,6 @@
     background-color: #0C0C0C;
     color: var(--title-text-color);
 }
-
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
@@ -174,11 +172,13 @@ a.ui-button:active,
         background-color: #141414;
     }
 }
+.ui-state-default.ui-state-active {
+    color: var(--main-color);
+}
 .ui-state-hover {
     opacity: 0.5;
 }
 .ui-widget.ui-widget-content {
     border: 1px solid transparent;
 }
-
 // ============================================================================ DATEPICKER END ========================================================
