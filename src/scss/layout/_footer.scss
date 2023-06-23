@@ -183,6 +183,7 @@
         }
         &__item {
             transition: var(--transition-property);
+            cursor: pointer;
 
             &:hover,
             &:focus {
