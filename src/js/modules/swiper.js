@@ -16,7 +16,7 @@ let myImageSlider = new Swiper('.bar-hero__swiper', {
   spaceBetween: 0,
   slidesPerGroup: 1,
   centeredSlides: true,
-  initialSlide: 1,
+  initialSlide: 0,
   slidesPerColumn: 1,
   loop: true,
   autoplay: {
@@ -63,7 +63,7 @@ function updatePagination(currentIndex) {
   });
 
   // Calculate the index of the active item with cyclic switching
-  const adjustedIndex = (currentIndex + paginationItems.length - 1) % paginationItems.length;
+  const adjustedIndex = (currentIndex + paginationItems.length) % paginationItems.length;
 
   // Add the "active" class only to the current pagination item
   paginationItems[adjustedIndex].classList.add('active');
