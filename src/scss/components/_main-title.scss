@@ -2,6 +2,7 @@
     @include font-title;
     font-feature-settings: 'tnum' on, 'lnum' on;
     color: var(--main-color);
+    text-transform: capitalize;
 }
 .main-subtitle{
     @include font-subtitle;

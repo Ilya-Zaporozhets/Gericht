@@ -1,0 +1,39 @@
+.happy-hours {
+    margin: auto;
+    height: 900px;
+
+    background-color: #040404;
+    background-image: -webkit-image-set(url("../img/happy-hours-bg@2x.avif")2x,
+            url("../img/happy-hours-bg.avif")1x,
+            url("../img/happy-hours-bg@2x.webp") 2x,
+            url("../img/happy-hours-bg.webp") 1x,
+            url("../img/happy-hours-bg@2x.jpg") 2x,
+            url("../img/happy-hours-bg.jpg") 1x);
+    background-image: image-set(url("../img/happy-hours-bg@2x.avif")2x,
+            url("../img/happy-hours-bg.avif")1x,
+            url("../img/happy-hours-bg@2x.webp") 2x,
+            url("../img/happy-hours-bg.webp") 1x,
+            url("../img/happy-hours-bg@2x.jpg") 2x,
+            url("../img/happy-hours-bg.jpg") 1x);
+    background-size: 1920px 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__wrapper {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+    &__title {
+        color: var(--main-color);
+        @include font-title($fs: 128px, $lh: 166.4px, $ls: 3.84px);
+        text-transform: capitalize;
+    }
+    &__subtitle {
+        color: var(--title-text-color);
+        @include font-subtitle($fs: 32px, $lh: 41.6px, $ls: 1.28px);
+        text-transform: capitalize;
+    }
+}

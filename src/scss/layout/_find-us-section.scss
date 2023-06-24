@@ -1,0 +1,102 @@
+.find-us {
+    margin: auto;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    background-color: #040404;
+    background-image: -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
+            url("../img/section-bg.avif") 1x,
+            url("../img/section-bg@2x.webp") 2x,
+            url("../img/section-bg.webp") 1x,
+            url("../img/section-bg@2x.jpg") 2x,
+            url("../img/section-bg.jpg") 1x);
+    background-image: image-set(url("../img/section-bg@2x.avif") 2x,
+            url("../img/section-bg.avif") 1x,
+            url("../img/section-bg@2x.webp") 2x,
+            url("../img/section-bg.webp") 1x,
+            url("../img/section-bg@2x.jpg") 2x,
+            url("../img/section-bg.jpg") 1x);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__wrapper {
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icon {
+        margin-top: 8px;
+    }
+    &__text {
+        margin-top: 64px;
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: var(--primary-text-color);
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__btn {
+        margin-top: 64px;
+        padding: 8px;
+        width: 119px;
+    }
+    &__image {
+        position: relative;
+        // width: 619px;
+        // height: 688px;
+        z-index: 0;
+        &::before {
+            content: '';
+    
+            position: absolute;
+            bottom: -24px;
+            left: -24px;
+    
+            width: 74%;
+            height: 59%;
+    
+            background-color: #DCCA87;
+            z-index: -1;
+        }
+    
+        &::after {
+            content: '';
+    
+            position: absolute;
+            top: -24px;
+            right: -24px;
+    
+            width: 74%;
+            height: 59%;
+    
+            background-color: #DCCA87;
+            z-index: -1;
+        }
+    }
+}
+.time {
+    &__wrapper {
+        margin-top: 32px
+    }
+    &__title {
+        @include font-subtitle;
+        color: var(--main-color);
+    }
+    &__list {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__text {
+        font-family: var(--main-fonts);
+        @include font-text;
+        color: var(--title-text-color);
+    }
+}
