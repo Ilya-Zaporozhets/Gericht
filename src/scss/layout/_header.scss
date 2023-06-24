@@ -10,6 +10,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        position: relative;
+        z-index: 1;
     }
 }
 .logo-link {
@@ -17,6 +20,7 @@
     color: var(--title-text-color);
 }
 .navigation {
+    z-index: 2;
     &__list {
         display: flex;
         align-items: center;
