@@ -6,3 +6,4 @@ import "./modules/back-to-top-btn.js";
 import "./modules/slick.js";
 import "./modules/slaider.js";
 import "./modules/datepicker.js";
+import "./modules/swiper.js";

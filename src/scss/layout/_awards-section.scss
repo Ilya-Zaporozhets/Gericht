@@ -1,16 +1,16 @@
 .awards {
     padding-top: 128px;
     padding-bottom: 128px;
-    background-image: -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x,
-            url("../img/section-bg.avif") type("image/avif") 1x,
-            url("../img/section-bg@2x.webp") type("image/webp") 2x,
-            url("../img/section-bg.webp") type("image/webp") 1x,
+    background-image: -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
+            url("../img/section-bg.avif") 1x,
+            url("../img/section-bg@2x.webp") 2x,
+            url("../img/section-bg.webp") 1x,
             url("../img/section-bg@2x.jpg") 2x,
             url("../img/section-bg.jpg") 1x);
-    background-image: image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x,
-            url("../img/section-bg.avif") type("image/avif") 1x,
-            url("../img/section-bg@2x.webp") type("image/webp") 2x,
-            url("../img/section-bg.webp") type("image/webp") 1x,
+    background-image: image-set(url("../img/section-bg@2x.avif") 2x,
+            url("../img/section-bg.avif") 1x,
+            url("../img/section-bg@2x.webp") 2x,
+            url("../img/section-bg.webp") 1x,
             url("../img/section-bg@2x.jpg") 2x,
             url("../img/section-bg.jpg") 1x);
     background-size: cover;
@@ -22,18 +22,18 @@
         padding-top: 118.5px;
         padding-bottom: 118.5px;
         // background-image: -webkit-image-set(
-        //   url("../img/awards-img@2x.avif") type("image/avif") 2x,
-        //   url("../img/awards-img.avif") type("image/avif") 1x,
-        //   url("../img/awards-img@2x.webp") type("image/webp") 2x,
-        //   url("../img/awards-img.webp") type("image/webp") 1x,
+        //   url("../img/awards-img@2x.avif") 2x,
+        //   url("../img/awards-img.avif") 1x,
+        //   url("../img/awards-img@2x.webp") 2x,
+        //   url("../img/awards-img.webp") 1x,
         //   url("../img/awards-img@2x.jpg") 2x,
         //   url("../img/awards-img.jpg") 1x
         // );
         // background-image: image-set(
-        //   url("../img/awards-img@2x.avif") type("image/avif") 2x,
-        //   url("../img/awards-img.avif") type("image/avif") 1x,
-        //   url("../img/awards-img@2x.webp") type("image/webp") 2x,
-        //   url("../img/awards-img.webp") type("image/webp") 1x,
+        //   url("../img/awards-img@2x.avif") 2x,
+        //   url("../img/awards-img.avif") 1x,
+        //   url("../img/awards-img@2x.webp") 2x,
+        //   url("../img/awards-img.webp") 1x,
         //   url("../img/awards-img@2x.jpg") 2x,
         //   url("../img/awards-img.jpg") 1x
         // );
@@ -53,18 +53,20 @@
             // width: 483px;
             width: 37.2%;
 
-            background-image: -webkit-image-set(url("../img/awards-img@2x.avif") type("image/avif") 2x,
-                        url("../img/awards-img.avif") type("image/avif") 1x,
-                        url("../img/awards-img@2x.webp") type("image/webp") 2x,
-                        url("../img/awards-img.webp") type("image/webp") 1x,
-                        url("../img/awards-img@2x.jpg") 2x,
-                        url("../img/awards-img.jpg") 1x);
-            background-image: image-set(url("../img/awards-img@2x.avif") type("image/avif") 2x,
-                        url("../img/awards-img.avif") type("image/avif") 1x,
-                        url("../img/awards-img@2x.webp") type("image/webp") 2x,
-                        url("../img/awards-img.webp") type("image/webp") 1x,
-                        url("../img/awards-img@2x.jpg") 2x,
-                        url("../img/awards-img.jpg") 1x);
+            background-image:
+                -webkit-image-set(url("../img/awards-img@2x.avif") 2x,
+                    url("../img/awards-img.avif") 1x,
+                    url("../img/awards-img@2x.webp") 2x,
+                    url("../img/awards-img.webp") 1x,
+                    url("../img/awards-img@2x.jpg") 2x,
+                    url("../img/awards-img.jpg") 1x);
+            background-image:
+                image-set(url("../img/awards-img@2x.avif") 2x,
+                    url("../img/awards-img.avif") 1x,
+                    url("../img/awards-img@2x.webp") 2x,
+                    url("../img/awards-img.webp") 1x,
+                    url("../img/awards-img@2x.jpg") 2x,
+                    url("../img/awards-img.jpg") 1x);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: right;
@@ -86,17 +88,17 @@
             height: 54.85%;
         
             background-image:
-                -webkit-image-set(url("../img/awards-g@2x.avif") type("image/avif") 2x,
-                    url("../img/awards-g.avif") type("image/avif") 1x,
-                    url("../img/awards-g@2x.webp") type("image/webp") 2x,
-                    url("../img/awards-g.webp") type("image/webp") 1x,
+                -webkit-image-set(url("../img/awards-g@2x.avif") 2x,
+                    url("../img/awards-g.avif") 1x,
+                    url("../img/awards-g@2x.webp") 2x,
+                    url("../img/awards-g.webp") 1x,
                     url("../img/awards-g@2x.png") 2x,
                     url("../img/awards-g.png") 1x);
             background-image:
-                image-set(url("../img/awards-g@2x.avif") type("image/avif") 2x,
-                    url("../img/awards-g.avif") type("image/avif") 1x,
-                    url("../img/awards-g@2x.webp") type("image/webp") 2x,
-                    url("../img/awards-g.webp") type("image/webp") 1x,
+                image-set(url("../img/awards-g@2x.avif") 2x,
+                    url("../img/awards-g.avif") 1x,
+                    url("../img/awards-g@2x.webp") 2x,
+                    url("../img/awards-g.webp") 1x,
                     url("../img/awards-g@2x.png") 2x,
                     url("../img/awards-g.png") 1x);
             background-size: 100%;
