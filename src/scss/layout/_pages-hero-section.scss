@@ -62,22 +62,24 @@
     &__link {
         color: var(--title-text-color);
         @include font-subtitle;   
-        &::after {
-            content: '';
-            display: block;
-            width: 100%;
+        transition: var(--transition-property);
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     width: 100%;
             
 
-            border: 1px solid #ffffff;
-            border-radius: 50px;
-            opacity: 0;
-            transition: var(--transition-property);
-        }
+        //     border: 1px solid #ffffff;
+        //     border-radius: 50px;
+        //     opacity: 0;
+        //     transition: var(--transition-property);
+        // }
         &:hover,
         &:focus {
-            &::after {
-                opacity: 1;
-            }
+            opacity: .4;
+            // &::after {
+            //     opacity: 1;
+            // }
         }
     }
 }
