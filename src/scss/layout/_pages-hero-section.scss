@@ -53,7 +53,7 @@
             width: 24px;
             height: 24px;
         }
-        &:nth-last-child(1) {
+        &:last-child {
             &::after {
                 display: none;
             }
@@ -61,6 +61,25 @@
     }
     &__link {
         color: var(--title-text-color);
-        @include font-subtitle;
+        @include font-subtitle;   
+        transition: var(--transition-property);
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     width: 100%;
+            
+
+        //     border: 1px solid #ffffff;
+        //     border-radius: 50px;
+        //     opacity: 0;
+        //     transition: var(--transition-property);
+        // }
+        &:hover,
+        &:focus {
+            opacity: .4;
+            // &::after {
+            //     opacity: 1;
+            // }
+        }
     }
 }

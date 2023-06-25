@@ -85,11 +85,12 @@
         color: var(--title-text-color);
         border-radius: 5px;
         border: 1px solid #F5EFDB;
-
+        transition: var(--transition-property);
         &:hover,
         &:focus,
         &:active {
             border: 1px solid var(--main-color);
+            outline: none;
         }
     }
     &__btn {
