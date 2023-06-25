@@ -1,0 +1,84 @@
+.history {
+    padding-top: 152px;
+    padding-bottom: 152px;
+    background-color: var(--bcg-color);
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon {
+        margin-top: 8px;
+    }
+    &__inner {
+        margin-top: 64px;
+        display: flex;
+        gap: 143px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        width: 523px;
+
+        .text {
+            font-family: var(--main-fonts);
+            @include font-text;
+            color: var(--primary-text-color);
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 634px;
+
+        .title {
+            color: var(--main-color);
+            text-transform: capitalize;
+            @include font-title($fs: 45px, $lh: 59px, $ls: 4%);
+        }
+
+        .list {
+            display: flex;
+            gap: 128px;
+            &__item {
+                width: calc((100% - 256px)/3);
+                position: relative;
+
+                &::after {
+                    content: url(../img/icons.svg#vertical-line-login);
+                    display: block;
+                    width: 128px;
+                    height: 128px;
+
+                    position: absolute;
+                    right: -128px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            &__subtitle {
+                color: var(--main-color);
+                text-transform: capitalize;
+                @include font-title($fs: 45px, $lh: 59px, $ls: 4%);
+                font-feature-settings: 'tnum' on, 'lnum' on;
+            }
+            &__icon {
+                margin-top: 8px;
+            }
+            &__text {
+                margin-top: 8px;
+                color: var(--title-text-color);
+                @include font-title($ff: var(--CormorantUpright-Regular), $fw: 400, $fs: 32px, $lh: 42px, $ls: 4%);
+            }
+        }
+    }
+}
