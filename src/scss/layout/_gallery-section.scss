@@ -83,7 +83,9 @@
   position: relative;
   &:hover .gallery__link,
   &:focus .gallery__link {
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+
+    opacity: 1;
   }
 }
 
@@ -95,9 +97,11 @@
   width: 100%;
   height: 100%;
 
-  transform: translate(-150%, -150%);
+  opacity: 0;
 
-  //   transition: all var( --transition-property);
+  transform: translate(-50%, -50%);
+
+  transition: opacity var(--transition-property);
 
   background: linear-gradient(
     207.55deg,
