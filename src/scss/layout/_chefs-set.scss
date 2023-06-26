@@ -65,7 +65,7 @@
 
     opacity: 0;
 
-    background-color: #0c0c0c;
+    background-color: rgba(12, 12, 12, 0.5);
   }
 
   &__overlay {
@@ -102,14 +102,13 @@
     width: 24px;
     height: 24px;
 
+    fill: var(--title-text-color);
 
-    fill: var(--main-color);
-
-
-    transition: transform var(--transition-property);
+    transition: fill, transform var(--transition-property);
 
     &:hover,
     &:focus {
+      fill: var(--main-color);
       transform: scale(115%);
     }
   }
@@ -140,7 +139,7 @@
   width: 100%;
   height: 100%;
 
-  opacity: 0.5;
+  opacity: 1;
 
   transition: opacity var(--transition-property);
 }
