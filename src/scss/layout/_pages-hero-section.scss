@@ -36,6 +36,7 @@
     text-align: center;
     @include font-subtitle($fs: 90px, $lh: 117px, $ls: 3.6px);
     text-transform: capitalize;
+    text-shadow: 0 0 2px #000000;
     }
     &__list {
         display: flex;

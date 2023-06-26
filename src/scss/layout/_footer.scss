@@ -188,13 +188,18 @@
 
             &:hover,
             &:focus {
-                opacity: 0.5;
+                .social__icon {
+                    fill: var(--main-color);
+                    transform: scale(1.2);
+                }
             }
         }
         &__icon {
             display: block;
             width: 24px;
             height: 24px;
+            fill: #F5EFDB;
+            transition: var(--transition-property);
         }
     }
 }
