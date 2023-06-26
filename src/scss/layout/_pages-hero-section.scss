@@ -36,6 +36,7 @@
     text-align: center;
     @include font-subtitle($fs: 90px, $lh: 117px, $ls: 3.6px);
     text-transform: capitalize;
+    text-shadow: 0 0 2px #000000;
     }
     &__list {
         display: flex;
@@ -53,7 +54,7 @@
             width: 24px;
             height: 24px;
         }
-        &:nth-last-child(1) {
+        &:last-child {
             &::after {
                 display: none;
             }
@@ -61,6 +62,25 @@
     }
     &__link {
         color: var(--title-text-color);
-        @include font-subtitle;
+        @include font-subtitle;   
+        transition: var(--transition-property);
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     width: 100%;
+            
+
+        //     border: 1px solid #ffffff;
+        //     border-radius: 50px;
+        //     opacity: 0;
+        //     transition: var(--transition-property);
+        // }
+        &:hover,
+        &:focus {
+            opacity: .4;
+            // &::after {
+            //     opacity: 1;
+            // }
+        }
     }
 }
