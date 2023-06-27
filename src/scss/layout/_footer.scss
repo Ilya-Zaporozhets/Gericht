@@ -3,7 +3,6 @@
     padding-bottom: 144px;
 
     background-color: var(--bcg-color);
-
     background-image: 
         linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
         -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
@@ -26,6 +25,7 @@
     z-index: -2;
     &__all-rights {
         margin-top: 83px;
+
         text-align: center;
         font-family: var(--main-fonts);
         font-style: normal;
@@ -40,7 +40,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
     background: #0C0C0C;
     border: 1px solid rgba(220, 202, 135, 0.2);
@@ -127,7 +126,6 @@
             font-weight: 400;
             font-size: 32px;
             line-height: 1.3;
-
             letter-spacing: 0.04em;
             text-transform: capitalize;
             font-feature-settings: 'tnum' on, 'lnum' on;
@@ -147,7 +145,6 @@
             font-family: var(--main-fonts);
             font-style: normal;
             @include font-text;
-
             color: var(--primary-text-color);
         }
     }
@@ -159,16 +156,15 @@
             @include font-title($ff: var(--title-fonts), $fw: 700, $ls: 0.04em);
             text-align: center;
             text-transform: uppercase;
-
             color: var(--main-color);
         }
         &__text {
             margin-top: 32px;
             width: 438px;
+
             text-align: center;
             font-family: var(--main-fonts);
             @include font-text($fs: 18px, $lh: 30px, $ls: 0.06em);
-
             color: var(--title-text-color);
         }
         &__icon {
@@ -185,7 +181,7 @@
         &__item {
             transition: var(--transition-property);
             cursor: pointer;
-
+            
             &:hover,
             &:focus {
                 .social__icon {

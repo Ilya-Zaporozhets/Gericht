@@ -1,7 +1,6 @@
 .bar-hero {
     margin: auto;
     padding-bottom: 138px;
-    
     &::before {
         content: '';
         position: absolute;
@@ -10,7 +9,7 @@
         transform: translateX(-50%);
         width: 100%;
         height: 1100px;
-        background-color: #040404;
+        background-color: var(--bcg-color);
         background-image: 
             linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
             -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
@@ -29,7 +28,6 @@
             url("../img/section-bg.jpg") 1x);
         background-size: cover;
         background-repeat: no-repeat;
-
     }
     &__wrapper {
         position: relative;
@@ -79,6 +77,7 @@
     gap: 8px;
 
     width: 300px;
+    transition: var(--transition-property);
 
     &__text {
         display: flex;
@@ -91,21 +90,27 @@
         letter-spacing: 0.64px;
         text-transform: capitalize;
         font-feature-settings: 'tnum' on, 'lnum' on;
+        transition: var(--transition-property);
     }
     &__item {
         display: flex;
         flex-direction: row;
         align-items: center;
         transition: var(--transition-property);
-        &.active::after {
-            content: '';
-            margin-left: 8px;
+        &.active {
+            &::after {
+                content: '';
+                margin-left: 8px;
 
-            display: block;
-            width: 16px;
-            height: 1px;
+                display: block;
+                width: 16px;
+                height: 1px;
 
-            background-color: #F5EFDB;
+                background-color: var(--main-color);
+            }
+            .pagination__text {
+                color: var(--main-color);
+            }
         }
         &.hiden::after{
             display: none;
