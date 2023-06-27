@@ -76,7 +76,7 @@
     }
     &__item {
         margin-bottom: 41.5px;
-        &:nth-last-child {
+        &:last-child {
             margin-bottom: 0;
         }
     }
@@ -103,6 +103,7 @@
     }
     &__text {
         margin-top: 8px;
+        font-style: var(--main-fonts);
         @include font-text;
         color: var(--primary-text-color);
     }
