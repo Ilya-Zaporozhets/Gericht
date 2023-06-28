@@ -102,9 +102,9 @@
     width: 24px;
     height: 24px;
 
+    fill: var(--title-text-color);
 
     transition: fill, transform var(--transition-property);
-
 
     &:hover,
     &:focus {

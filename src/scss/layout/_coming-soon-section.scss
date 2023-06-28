@@ -1,6 +1,6 @@
 .coming-soon {
   width: 100%;
-  height: 1024 px;
+  height: 3024 px;
 
   padding-top: 150px;
   padding-bottom: 150px;
@@ -89,6 +89,8 @@
 
   color: var(--primary-text-color);
   margin-bottom: 20px;
+
+  font-feature-settings: "lnum";
 }
 
 .label {
