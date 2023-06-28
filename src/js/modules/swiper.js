@@ -2,69 +2,73 @@
 const paginationItems = document.querySelectorAll('.pagination__item');
 
 // Initialize Swiper
-let myImageSlider = new Swiper('.bar-hero__swiper', {
-  simulateTouch: false,
-  slideToClickedSlide: false,
-  hashNavigation: {
-    watchState: true,
-  },
-  keyboard: {
-    enabled: false,
-  },
-  autoHeight: false,
-  slidesPerView: 1,
-  spaceBetween: 0,
-  slidesPerGroup: 1,
-  centeredSlides: true,
-  initialSlide: 0,
-  slidesPerColumn: 1,
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    stopOnLastSlide: false,
-    disableOnInteraction: false,
-  },
-  speed: 500,
-  direction: 'vertical',
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
-  preloadImages: true,
-  lazy: {
-    loadOnTransitionStart: true,
-    loadPrevNext: true,
-  },
-  watchSlidesProgress: true,
-  watchSlidesVisibility: true,
-  observer: true,
-  observeParents: true,
-  observeSlideChildren: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true, // Add this option to make pagination clickable
-  },
-  on: {
-    slideChange: function () {
-      // Get the index of the current slide
-      const currentIndex = this.realIndex;
+const barSwiperElement = document.getElementById('bar-swiper');
 
-      // Update pagination
-      updatePagination(currentIndex);
+if (barSwiperElement) {
+  let myImageSlider = new Swiper('.bar-hero__swiper', {
+    simulateTouch: false,
+    slideToClickedSlide: false,
+    hashNavigation: {
+      watchState: true,
     },
-  },
-});
+    keyboard: {
+      enabled: false,
+    },
+    autoHeight: false,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+    initialSlide: 0,
+    slidesPerColumn: 1,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+    },
+    speed: 500,
+    direction: 'vertical',
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
+    preloadImages: true,
+    lazy: {
+      loadOnTransitionStart: true,
+      loadPrevNext: true,
+    },
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    observer: true,
+    observeParents: true,
+    observeSlideChildren: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // Add this option to make pagination clickable
+    },
+    on: {
+      slideChange: function () {
+        // Get the index of the current slide
+        const currentIndex = this.realIndex;
 
-// Function to update pagination
-function updatePagination(currentIndex) {
-  // Remove the "active" class from all pagination items
-  paginationItems.forEach((item) => {
-    item.classList.remove('active');
+        // Update pagination
+        updatePagination(currentIndex);
+      },
+    },
   });
 
-  // Calculate the index of the active item with cyclic switching
-  const adjustedIndex = (currentIndex + paginationItems.length) % paginationItems.length;
+  // Function to update pagination
+  function updatePagination(currentIndex) {
+    // Remove the "active" class from all pagination items
+    paginationItems.forEach((item) => {
+      item.classList.remove('active');
+    });
 
-  // Add the "active" class only to the current pagination item
-  paginationItems[adjustedIndex].classList.add('active');
+    // Calculate the index of the active item with cyclic switching
+    const adjustedIndex = (currentIndex + paginationItems.length) % paginationItems.length;
+
+    // Add the "active" class only to the current pagination item
+    paginationItems[adjustedIndex].classList.add('active');
+  }
 }
