@@ -1,8 +1,9 @@
 .about {
     margin: auto;
     padding-top: 339px;
-    height: 960px;
-    background-color: #040404;
+    padding-bottom: 339px;
+
+    background-color: var(--bcg-color);
     background-image: 
         linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
         -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
@@ -19,8 +20,8 @@
         url("../img/section-bg.webp") 1x,
         url("../img/section-bg@2x.jpg") 2x,
         url("../img/section-bg.jpg") 1x);
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     &__wrapper {
         position: relative;
         display: flex;
@@ -77,17 +78,6 @@
         &.right {
             align-items: flex-start;
         }
-    }
-    &__g {
-        position: absolute;
-        display: block;
-    
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    
-        width: 391px;
-        height: 415px;
     }
     &__icon {
         margin-top: 8px;

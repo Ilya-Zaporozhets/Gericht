@@ -3,7 +3,7 @@
     padding-top: 128px;
     padding-bottom: 79px;
     
-    background-color: #040404;
+    background-color: var(--bcg-color);
     background-image: 
         linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
         -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
@@ -35,10 +35,10 @@
 
         &:before {
             content: '';
-            
             display: block;
             width: 523px;
             height: 702px;
+
             background-color: #040404;
             background-image: 
                 -webkit-image-set(url("../img/bar-about-beer@2x.avif") 2x,
@@ -63,10 +63,10 @@
         flex-direction: column;
         &:before {
             content: '';
-    
             display: block;
             width: 634px;
             height: 385px;
+
             background-color: #040404;
             background-image: -webkit-image-set(url("../img/bar-about-cocktail@2x.avif") 2x,
                     url("../img/bar-about-cocktail.avif") 1x,
@@ -96,6 +96,7 @@
     &__text {
         margin-top: 32px;
         max-width: 523px;
+        font-family: var(--main-fonts);
         @include font-text;
         color: var(--primary-text-color);
     }

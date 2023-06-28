@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const videoPlayerAbout = document.querySelector(".about-video-player");
   const playButtonAbout = document.querySelector("#about-play-button");
+  const aboutVideoElement = document.getElementById("about-video");
 
-  // Настройки плеера About
+  if (!aboutVideoElement) {
+    return;
+  }
+
   videoPlayerAbout.controls = false;
   videoPlayerAbout.autoplay = false;
 

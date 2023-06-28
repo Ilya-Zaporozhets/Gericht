@@ -20,7 +20,6 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-
         width: 523px;
 
         .text {
@@ -40,7 +39,6 @@
             text-transform: capitalize;
             @include font-title($fs: 45px, $lh: 59px, $ls: 4%);
         }
-
         .list {
             display: flex;
             gap: 128px;

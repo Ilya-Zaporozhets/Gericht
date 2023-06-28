@@ -33,13 +33,10 @@
     &__image {
         margin: auto;
         position: relative;
-        // width: 586px;
-        // height: 741px;
         z-index: 0;
 
         &::before {
             content: '';
-
             position: absolute;
             bottom: -24px;
             left: -24px;
@@ -52,7 +49,6 @@
         }
         &::after {
             content: '';
-
             position: absolute;
             top: -24px;
             right: -24px;
@@ -95,14 +91,15 @@
     }
     &__name {
         margin-top: 64px;
+
         font-family: var(--CormorantUpright-Regular);
         font-weight: 400;
         font-size: 32px;
         line-height: 1.3;
-    
         letter-spacing: 0.04em;
         text-transform: capitalize;
         font-feature-settings: 'tnum' on, 'lnum' on;
+
         color: var(--main-color);
     }
     &__prof {
@@ -113,12 +110,14 @@
     }
     &__sign {
         margin-top: 64px;
+        
         font-family: var(--BestermindRegular);
         font-style: normal;
         font-weight: 400;
         font-size: 64px;
         line-height: 1.29;
         letter-spacing: 0.04em;
+
         color: var(--primary-text-color);
     }
 }
