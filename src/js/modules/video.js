@@ -29,5 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
   videoPlayer.addEventListener("pause", () => {
     playButton.classList.remove("hide");
   });
-
 });

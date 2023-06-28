@@ -1,0 +1,105 @@
+.coming-soon {
+  width: 100%;
+  height: 1024 px;
+
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  text-align: center;
+
+  background-color: var(--bcg-color);
+
+  background-image: linear-gradient(
+      18deg,
+      rgba(4, 4, 4, 0.5) 0%,
+      rgba(4, 4, 4, 0.5) 100%
+    ),
+    -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif")
+          1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp")
+          1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg")
+          1x);
+  background-image: linear-gradient(
+      18deg,
+      rgba(4, 4, 4, 0.5) 0%,
+      rgba(4, 4, 4, 0.5) 100%
+    ),
+    image-set(
+      url("../img/section-bg@2x.avif") 2x,
+      url("../img/section-bg.avif") 1x,
+      url("../img/section-bg@2x.webp") 2x,
+      url("../img/section-bg.webp") 1x,
+      url("../img/section-bg@2x.jpg") 2x,
+      url("../img/section-bg.jpg") 1x
+    );
+  background-size: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.coming-soon__title {
+  margin-bottom: 24px;
+
+  font-family: var(--title-fonts);
+  font-size: 90px;
+  line-height: 1.3;
+
+  color: var(--main-color);
+}
+.coming-soon__svg {
+  width: 60px;
+  height: 12px;
+
+  margin-bottom: 40px;
+}
+
+.coming-soon__text {
+  margin-bottom: 80px;
+
+  font-family: var(--main-title);
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: var(--primary-text-color);
+}
+
+#timer-1 {
+  margin: 0 auto;
+
+  padding-bottom: 80px;
+
+  width: 700px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.field {
+  width: 20%;
+
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.value {
+  font-family: var(--title-fonts);
+
+  font-size: 64px;
+  line-height: 1.3;
+
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
+}
+
+.label {
+  font-family: var(--secondary-fonts);
+  font-size: 23px;
+  line-height: 1.3;
+
+  color: var(--primary-text-color);
+}
+
+.coming-soon__wrapper .main-btn {
+  box-sizing: border-box;
+  display: inline-block;
+}
