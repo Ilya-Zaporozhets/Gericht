@@ -8,3 +8,4 @@ import "./modules/slick.js";
 import "./modules/slaider.js";
 import "./modules/datepicker.js";
 import "./modules/swiper.js";
+import "./modules/coming-soon-section.js";
