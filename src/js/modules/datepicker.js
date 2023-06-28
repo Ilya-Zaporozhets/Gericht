@@ -1,20 +1,26 @@
+// Function to insert the current date into the placeholder
+const insertCurrentDate = () => {
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const month = currentDate.getMonth() + 1; // Months in JavaScript start from 0
+  const year = currentDate.getFullYear();
+
+  // Formatting the date as "dd/mm/yyyy"
+  const formattedDate = `${day < 10 ? '0' + day : day}/${month < 10 ? '0' + month : month}/${year}`;
+
+  // Setting the formatted date as the placeholder value
+  document.querySelector(".datepicker").placeholder = formattedDate;
+};
+
+// Function to initialize the Datepicker
 const initializeDatepicker = () => {
-  // Функция для вставки текущей даты в placeholder
-  const insertCurrentDate = () => {
-    const currentDate = new Date();
-    const day = currentDate.getDate();
-    const month = currentDate.getMonth() + 1; // Месяцы в JavaScript начинаются с 0
-    const year = currentDate.getFullYear();
+  const reservationsFormElement = document.getElementById("reservations-form");
+  if (!reservationsFormElement) {
+    return; // Exit the function if the element is not found
+  }
 
-    // Форматирование даты в виде "dd/mm/yyyy"
-    const formattedDate = `${day < 10 ? '0' + day : day}/${month < 10 ? '0' + month : month}/${year}`;
-
-    // Установка отформатированной даты в значение placeholder
-    document.querySelector(".datepicker").placeholder = formattedDate;
-  };
-
-  // Инициализация Datepicker
-  const today = new Date(); // Получение текущей даты
+  // Initializing the Datepicker
+  const today = new Date(); // Getting the current date
   $("#calendar").datepicker({
     dateFormat: 'dd/mm/yy',
     closeText: "Close",
@@ -35,38 +41,37 @@ const initializeDatepicker = () => {
       });
     },
     autoSize: true,
-    minDate: today // Ограничение выбора предыдущих дат
+    minDate: today // Restrict selection of previous dates
   });
 
-  // Вызов функции для вставки текущей даты
+  // Call the function to insert the current date
   insertCurrentDate();
 };
 
-// Вызов функции для инициализации Datepicker
-initializeDatepicker();
+// Function to insert the current time into the placeholder
+const insertCurrentTime = () => {
+  const currentTime = new Date();
+  const hours = currentTime.getHours();
+  const minutes = currentTime.getMinutes();
 
-// ====================================================================================================
+  // Formatting the time as "HH:mm"
+  const formattedTime = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
 
-// ========================================================== TIMEPICKER ====================================================================
+  // Setting the formatted time as the placeholder value
+  document.querySelector(".timepicker").placeholder = formattedTime;
+};
 
+// Function to initialize the Timepicker
 const initializeTimepicker = () => {
-  // Функция для вставки текущего времени в placeholder
-  const insertCurrentTime = () => {
-    const currentTime = new Date();
-    const hours = currentTime.getHours();
-    const minutes = currentTime.getMinutes();
+  const reservationsFormElement = document.getElementById("reservations-form");
+  if (!reservationsFormElement) {
+    return; // Exit the function if the element is not found
+  }
 
-    // Форматирование времени в виде "HH:mm"
-    const formattedTime = `${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}`;
-
-    // Установка отформатированного времени в значение placeholder
-    document.querySelector(".timepicker").placeholder = formattedTime;
-  };
-
-  // Инициализация Timepicker
-  const now = new Date(); // Получение текущего времени
+  // Initializing the Timepicker
+  const now = new Date(); // Getting the current time
   $("#time").timepicker({
-    timeFormat: 'HH:mm', // Формат времени в 24-часовом формате
+    timeFormat: 'HH:mm', // Time format in 24-hour format
     interval: 30,
     defaultTime: '12:00',
     closeOnSelect: true,
@@ -84,12 +89,13 @@ const initializeTimepicker = () => {
         transform: "translateX(-50%)"
       });
     },
-    minTime: now // Ограничение выбора предыдущего времени
+    minTime: now // Restrict selection of previous time
   });
 
-  // Вызов функции для вставки текущего времени
+  // Call the function to insert the current time
   insertCurrentTime();
 };
 
-// Вызов функции для инициализации Timepicker
+// Call functions to initialize the Datepicker and Timepicker
+initializeDatepicker();
 initializeTimepicker();
