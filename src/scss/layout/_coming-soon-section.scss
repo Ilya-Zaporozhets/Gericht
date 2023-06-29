@@ -1,39 +1,44 @@
 .coming-soon {
   width: 100%;
-  height: 3024 px;
 
   padding-top: 150px;
   padding-bottom: 150px;
 
   text-align: center;
-
-  background-color: var(--bcg-color);
-
-  background-image: linear-gradient(
-      18deg,
-      rgba(4, 4, 4, 0.5) 0%,
-      rgba(4, 4, 4, 0.5) 100%
-    ),
-    -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif")
-          1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp")
-          1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg")
-          1x);
-  background-image: linear-gradient(
-      18deg,
-      rgba(4, 4, 4, 0.5) 0%,
-      rgba(4, 4, 4, 0.5) 100%
-    ),
-    image-set(
-      url("../img/section-bg@2x.avif") 2x,
-      url("../img/section-bg.avif") 1x,
-      url("../img/section-bg@2x.webp") 2x,
-      url("../img/section-bg.webp") 1x,
-      url("../img/section-bg@2x.jpg") 2x,
-      url("../img/section-bg.jpg") 1x
-    );
-  background-size: 100% 100%, 100% 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 1100px;
+      background-color: var(--bcg-color);
+      background-image:
+        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
+        -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
+          url("../img/section-bg.avif") 1x,
+          url("../img/section-bg@2x.webp") 2x,
+          url("../img/section-bg.webp") 1x,
+          url("../img/section-bg@2x.jpg") 2x,
+          url("../img/section-bg.jpg") 1x);
+      background-image:
+        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
+        image-set(url("../img/section-bg@2x.avif") 2x,
+          url("../img/section-bg.avif") 1x,
+          url("../img/section-bg@2x.webp") 2x,
+          url("../img/section-bg.webp") 1x,
+          url("../img/section-bg@2x.jpg") 2x,
+          url("../img/section-bg.jpg") 1x);
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__btn {
+    margin-top: 40px;
+  }
 }
 
 .coming-soon__title {
