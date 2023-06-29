@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous"
+  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+  integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <title>GERICHT</title>
+</head>
+
+
+
+<body>
+
+    <header class="header">
+    <div class="header__wrapper">
+        <a href="./" class="logo-link link">Gerícht</a>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__item">
+                    <a href="./" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Home
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./bar.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Bar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="javascript:void(0)" class="navigation__link link">
+                        Pages
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./our-service.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our Services
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./about-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./our-team.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our team
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./faq.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="./contact-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./blog.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Blog
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./coming-soon.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Landing
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="login-frame">
+            <ul class="login-frame__list list">
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Log in</span>
+                    </button>
+                </li>
+                <li class="login-frame__item">
+                    /
+                </li>
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Registration</span>
+                    </button>
+                </li>
+            </ul>
+            <svg class="login-frame__icon"></svg>
+            <button class="login-frame__button table">
+                <span>Book Table</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+
+  <section class="coming-soon">
+  <div class="coming-soon__wrapper container">
+    <h2 class="coming-soon__title">Coming Soon</h2>
+
+    <svg class="coming-soon__svg">
+      <use href="img/icons.svg#spoon"></use>
+    </svg>
+
+    <p class="coming-soon__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique feugiat
+      orci tristique bibendum sollicitudin at aliquam. Nulla varius augue eu
+      orci vel.
+    </p>
+
+    <div class="timer" id="timer-1">
+      <div class="field">
+        <span class="value" data-value="days">11</span>
+        <span class="label">Days</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="hours">11</span>
+        <span class="label">Hours</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="mins">11</span>
+        <span class="label">Minutes</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="secs">11</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+
+    <a href="./index.html" class="coming-soon__btn main-btn link">Back To Home</a>
+  </div>
+</section>
+
+    </main>
+
+
+   
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+</html>

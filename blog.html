@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous"
+  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+  integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <title>GERICHT</title>
+</head>
+
+
+
+<body>
+
+    <header class="header">
+    <div class="header__wrapper">
+        <a href="./" class="logo-link link">Gerícht</a>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__item">
+                    <a href="./" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Home
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./bar.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Bar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="javascript:void(0)" class="navigation__link link">
+                        Pages
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./our-service.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our Services
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./about-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./our-team.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our team
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./faq.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="./contact-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./blog.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Blog
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./coming-soon.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Landing
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="login-frame">
+            <ul class="login-frame__list list">
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Log in</span>
+                    </button>
+                </li>
+                <li class="login-frame__item">
+                    /
+                </li>
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Registration</span>
+                    </button>
+                </li>
+            </ul>
+            <svg class="login-frame__icon"></svg>
+            <button class="login-frame__button table">
+                <span>Book Table</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+ <section class="pages-hero">
+  <div class="pages-hero__wrapper container">
+    <h1 class="pages-hero__title">Our Blogs</h1>
+    <ul class="pages-hero__list list">
+      <li class="pages-hero__item">
+        <a href="../index.html" class="pages-hero__link link">Home</a>
+      </li>
+      <li class="pages-hero__item">
+        <a
+          href="./our-service.html"
+          class="pages-hero__link link"
+          rel="noopener noreferrer"
+          >Our Blogs</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+ <section class="blog-page">
+  <div class="blog-page__wrapper container">
+    <div class="blog-page__content">
+      <ul class="blog-page__list list">
+        <li class="blog-page__item">
+          <div class="blog-card">
+            <picture class="blog-card__photo">
+              <source
+                srcset="img/blog-steak.avif 1x, img/blog-steak@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/blog-steak.webp 1x, img/blog-steak@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="img/blog-steak.jpg 1x, img/blog-steak@2x.jpg 2x"
+              />
+              <img class="" src="img/blog-steak.jpg" alt="" />
+            </picture>
+            <div class="blog-card__overlay">
+              <p class="blog-card__date">16 Apr 2021</p>
+              <p class="blog-card__author">- Annalisa L</p>
+            </div>
+
+            <h2 class="blog-card__title">
+              Tips For Prepping And Caring For Your Grill
+            </h2>
+
+            <p class="blog-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              mattis ipsum turpis elit elit scelerisque egestas mus in.
+            </p>
+
+            <a href="" class="blog-card__link link">Read More</a>
+          </div>
+        </li>
+
+        <li class="blog-page__item">
+          <div class="blog-card">
+            <picture class="blog-card__photo">
+              <source
+                srcset="img/blog-coctail.avif 1x, img/blog-coctail@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/blog-coctail.webp 1x, img/blog-coctail@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="img/blog-coctail.jpg 1x, img/blog-coctail@2x.jpg 2x"
+              />
+              <img class="" src="img/blog-coctail.jpg" alt="" />
+            </picture>
+            <div class="blog-card__overlay">
+              <p class="blog-card__date">23 May 2021</p>
+              <p class="blog-card__author">-John Micheal</p>
+            </div>
+
+            <h2 class="blog-card__title">Summer Cocktails And Mocktails</h2>
+
+            <p class="blog-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              mattis ipsum turpis elit elit scelerisque egestas mus in.
+            </p>
+
+            <a href="" class="blog-card__link link">Read More</a>
+          </div>
+        </li>
+
+        <li class="blog-page__item">
+          <div class="blog-card">
+            <picture class="blog-card__photo">
+              <source
+                srcset="img/blog-sevice.avif 1x, img/blog-sevice@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/blog-sevice.webp 1x, img/blog-sevice@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="img/blog-sevice.jpg 1x, img/blog-sevice@2x.jpg 2x"
+              />
+              <img class="" src="img/blog-sevice.jpg" alt="" />
+            </picture>
+            <div class="blog-card__overlay">
+              <p class="blog-card__date">06 Mar 2020</p>
+              <p class="blog-card__author">- Andrial M</p>
+            </div>
+
+            <h2 class="blog-card__title">
+              How To Make Your Food Photographs Look Aesthetic
+            </h2>
+
+            <p class="blog-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              mattis ipsum turpis elit elit scelerisque egestas mus in.
+            </p>
+
+            <a href="" class="blog-card__link link">Read More</a>
+          </div>
+        </li>
+
+        <li class="blog-page__item">
+          <div class="blog-card">
+            <picture class="blog-card__photo">
+              <source
+                srcset="img/blog-team.avif 1x, img/blog-team@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/blog-team.webp 1x, img/blog-team@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="img/blog-team.jpg 1x, img/blog-team@2x.jpg 2x"
+              />
+              <img class="" src="img/blog-team.jpg" alt="" />
+            </picture>
+
+            <div class="blog-card__overlay">
+              <p class="blog-card__date">17 June 2018</p>
+              <p class="blog-card__author">-Kaityln B</p>
+            </div>
+
+            <h2 class="blog-card__title">
+              Co-ordination & Teamwork Tips from A Sous Chef
+            </h2>
+
+            <p class="blog-card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              mattis ipsum turpis elit elit scelerisque egestas mus in.
+            </p>
+
+            <a href="" class="blog-card__link link">Read More</a>
+          </div>
+        </li>
+      </ul>
+
+      <button type="button" class="main-btn">View More</button>
+    </div>
+
+    <div class="blog__menu">
+      <div class="blog-menu__search">
+        <h2 class="title">Search Page</h2>
+        <div class="input-overlay">
+          <input type="text" class="input" placeholder="Example" />
+
+          <svg class="search-icon">
+            <use href="img/icons.svg#search"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="blog-menu__categories">
+        <h2 class="title">All Categories</h2>
+        <ul class="blog-menu__categories-list list">
+          <li class="blog-menu__categories-item">
+            <p class="key">Photography</p>
+            <span class="value">(1)</span>
+          </li>
+          <li class="blog-menu__categories-item">
+            <p class="key">Baking</p>
+            <span class="value">(2)</span>
+          </li>
+          <li class="blog-menu__categories-item">
+            <p class="key">Cooking Tips</p>
+            <span class="value">(6)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="blog-menu__posts">
+        <h2 class="title">Our Latest Posts</h2>
+
+        <picture class="blog-menu__posts-photo">
+          <source
+            srcset="img/blog-coctail.avif 1x, img/blog-coctail@2x.avif 2x"
+            type="image/avif"
+          />
+          <source
+            srcset="img/blog-coctail.webp 1x, img/blog-coctail@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="img/blog-coctail.jpg 1x, img/blog-coctail@2x.jpg 2x"
+          />
+          <img class="" src="img/blog-coctail.jpg" alt="" />
+        </picture>
+
+        <div class="blog-menu__posts-wrapper">
+          <p class="blog-menu__posts-date">23 May 2021</p>
+          <p class="blog-menu__posts-author">- John Micheal</p>
+        </div>
+
+        <h3 class="blog-menu__posts-title">Summer Cocktails And Mocktails</h3>
+
+        <p class="blog-menu__posts-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+          mattis ipsum turpis elit....
+        </p>
+
+        <a href="" class="blog-menu__posts-link link">Read More</a>
+      </div>
+
+      <div class="blog-menu__tags">
+        <h2 class="title">Related Tags</h2>
+
+        <ul class="blog-menu__tags-list list">
+          <li class="blog-menu__tags-item">Grilling</li>
+
+          <li class="blog-menu__tags-item">Cooking</li>
+
+          <li class="blog-menu__tags-item">Baking</li>
+
+          <li class="blog-menu__tags-item">Cuisines</li>
+
+          <li class="blog-menu__tags-item">Chef</li>
+
+          <li class="blog-menu__tags-item">Alcohol Mixing</li>
+        </ul>
+      </div>
+
+      <div class="blog-menu__share">
+        <h2 class="title">Share</h2>
+
+        <ul class="blog-menu__share-list list">
+          <li class="blog-menu__share-item">
+            <a href="./coming-soon.html" class="blog-menu__share-link link">
+              <svg class="blog-menu__share-svg">
+                <use href="img/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="blog-menu__share-item">
+            <a href="./coming-soon.html" class="blog-menu__share-link link">
+              <svg class="blog-menu__share-svg">
+                <use href="img/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="blog-menu__share-item">
+            <a href="./coming-soon.html" class="blog-menu__share-link link">
+              <svg class="blog-menu__share-svg">
+                <use href="img/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+
+    <footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="subscribe-form">
+            <h3 class="subscribe-form__subtitle main-subtitle">Newsletter</h3>
+            <svg class="subscribe-form__icon icon-spoon">
+                <use href="./img/icons.svg#spoon"></use>
+            </svg>
+            <h4 class="subscribe-form__title main-title">Subscribe to Our Newsletter</h4>
+            <form class="subscribe-form__form">
+                <h3 class="title">And never miss latest Updates!</h3>
+                <div class="subscribe-form__inner">
+                    <input type="email" name="email" class="subscribe-form__input" placeholder="Email Address" id="user_email_sub"
+                        required>
+                    <button type="submit" class="subscribe-form__btn main-btn">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <svg class="subscribe-form__logo">
+                <use href="./img/icons.svg#logo"></use>
+            </svg>
+        </div>
+        <div class="contact-info">
+            <div class="contact">
+                <h3 class="contact__title">Contact Us</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <address class="contact__text">
+                            9 W 53rd St, New York, NY 10019, USA
+                        </address>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gericht">
+                <h2 class="gericht__title">Gerícht</h2>
+                <p class="gericht__text">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                <svg class="gericht__icon icon-spoon">
+                    <use href="./img/icons.svg#spoon"></use>
+                </svg>
+                <ul class="social__list list">
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#instagram"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3 class="contact__title">Working Hours</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <p class="contact__text">Monday-Friday:<br>
+                        08:00 am -12:00 am</p>
+                    </li>
+                    <li class="contact__item">
+                        <p class="contact__text">Saturday-Sunday:<br>
+                        07:00am -11:00 pm</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__all-rights">2021 Gerícht. All Rights reserved.</p>
+    </div>
+
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+</html>

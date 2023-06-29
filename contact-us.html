@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous"
+  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+  integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <title>GERICHT</title>
+</head>
+
+
+
+<body>
+
+    <header class="header">
+    <div class="header__wrapper">
+        <a href="./" class="logo-link link">Gerícht</a>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__item">
+                    <a href="./" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Home
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./bar.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Bar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="javascript:void(0)" class="navigation__link link">
+                        Pages
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./our-service.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our Services
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./about-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./our-team.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our team
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./faq.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="./contact-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./blog.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Blog
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./coming-soon.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Landing
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="login-frame">
+            <ul class="login-frame__list list">
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Log in</span>
+                    </button>
+                </li>
+                <li class="login-frame__item">
+                    /
+                </li>
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Registration</span>
+                    </button>
+                </li>
+            </ul>
+            <svg class="login-frame__icon"></svg>
+            <button class="login-frame__button table">
+                <span>Book Table</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+      <section class="pages-hero">
+    <div class="pages-hero__wrapper container">
+        <h1 class="pages-hero__title">
+            contact Us
+        </h1>
+        <ul class="pages-hero__list list">
+            <li class="pages-hero__item">
+                <a href="./" class="pages-hero__link link" target="_self" rel="noopener noreferrer">Home</a>
+            </li>
+            <li class="pages-hero__item">
+                <a href="./about-us.html" class="pages-hero__link link" target="_self" rel="noopener noreferrer">Contact Us</a>
+
+            </li>
+        </ul>
+    </div>
+</section>
+      <section class="map">
+    <div class="container">
+        <picture class="image">
+          <source srcset="./img/map.avif 1x, ./img/map@2x.avif 2x" type="image/avif">
+          <source srcset="./img/map.webp 1x, ./img/map@2x.webp 2x" type="image/webp">
+          <img srcset="./img/map.jpg 1x, ./img/map@2x.jpg 2x" src="./img/map.jpg" alt="">
+        </picture>
+    </div>
+</section>
+      <section class="feedback">
+    <div class="feedback__wrapper container">
+        <form class="feedback__form">
+            <label for="user_name" class="feedback__label">
+                <input type="text" name="firstName" class="feedback__input" id="user_name" required
+                    minlength="4" placeholder="Full Name">
+            </label>
+            <label for="user_email" class="feedback__label">
+                    <input type="email" name="email" class="feedback__input" id="user_email" placeholder="Email Address">
+            </label>
+            <label for="user_text" class="feedback__label">
+                <textarea name="user-message" class="feedback__input feedback__message" placeholder="Message" id="user_text"></textarea>
+            </label>
+            <button type="submit" class="feedback__btn main-btn">Subscribe</button>
+        </form>
+    </div>
+</section>
+    </main>
+
+
+    <footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="subscribe-form">
+            <h3 class="subscribe-form__subtitle main-subtitle">Newsletter</h3>
+            <svg class="subscribe-form__icon icon-spoon">
+                <use href="./img/icons.svg#spoon"></use>
+            </svg>
+            <h4 class="subscribe-form__title main-title">Subscribe to Our Newsletter</h4>
+            <form class="subscribe-form__form">
+                <h3 class="title">And never miss latest Updates!</h3>
+                <div class="subscribe-form__inner">
+                    <input type="email" name="email" class="subscribe-form__input" placeholder="Email Address" id="user_email_sub"
+                        required>
+                    <button type="submit" class="subscribe-form__btn main-btn">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <svg class="subscribe-form__logo">
+                <use href="./img/icons.svg#logo"></use>
+            </svg>
+        </div>
+        <div class="contact-info">
+            <div class="contact">
+                <h3 class="contact__title">Contact Us</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <address class="contact__text">
+                            9 W 53rd St, New York, NY 10019, USA
+                        </address>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gericht">
+                <h2 class="gericht__title">Gerícht</h2>
+                <p class="gericht__text">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                <svg class="gericht__icon icon-spoon">
+                    <use href="./img/icons.svg#spoon"></use>
+                </svg>
+                <ul class="social__list list">
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#instagram"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3 class="contact__title">Working Hours</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <p class="contact__text">Monday-Friday:<br>
+                        08:00 am -12:00 am</p>
+                    </li>
+                    <li class="contact__item">
+                        <p class="contact__text">Saturday-Sunday:<br>
+                        07:00am -11:00 pm</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__all-rights">2021 Gerícht. All Rights reserved.</p>
+    </div>
+
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+</html>

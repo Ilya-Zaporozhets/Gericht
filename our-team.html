@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+    crossorigin="anonymous"
+  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+  integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <title>GERICHT</title>
+</head>
+
+
+
+<body>
+
+    <header class="header">
+    <div class="header__wrapper">
+        <a href="./" class="logo-link link">Gerícht</a>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__item">
+                    <a href="./" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Home
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./bar.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Bar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="javascript:void(0)" class="navigation__link link">
+                        Pages
+                    </a>
+                    <ul class="navigation__sublist list">
+                        <li class="navigation__subitem">
+                            <a href="./our-service.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our Services
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./about-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./our-team.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                Our team
+                            </a>
+                        </li>
+                        <li class="navigation__subitem">
+                            <a href="./faq.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <a href="./contact-us.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./blog.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Blog
+                    </a>
+                </li>
+                <li class="navigation__item">
+                    <a href="./coming-soon.html" class="navigation__link link" target="_self" rel="noopener noreferrer">
+                        Landing
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="login-frame">
+            <ul class="login-frame__list list">
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Log in</span>
+                    </button>
+                </li>
+                <li class="login-frame__item">
+                    /
+                </li>
+                <li class="login-frame__item">
+                    <button class="login-frame__button">
+                        <span>Registration</span>
+                    </button>
+                </li>
+            </ul>
+            <svg class="login-frame__icon"></svg>
+            <button class="login-frame__button table">
+                <span>Book Table</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+    <section class="pages-hero">
+  <div class="pages-hero__wrapper container">
+    <h1 class="pages-hero__title">Our Chefs</h1>
+    <ul class="pages-hero__list list">
+      <li class="pages-hero__item">
+        <a href="javascript:void(0)" class="pages-hero__link link">Pages</a>
+      </li>
+      <li class="pages-hero__item">
+        <a
+          href="./our-team.html"
+          class="pages-hero__link link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Our Team</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="chefs-set">
+  <div class="chefs-set__wrapper container">
+    <ul class="chefs-set__list list">
+      <li class="chefs-set__item">
+        <div class="chefs-set__card">
+          <div class="chefs-set__overlay">
+            <picture>
+              <source
+                srcset="img/kevin.avif 1x, img/kevin@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/kevin.webp 1x, img/kevin@2x.webp 2x"
+                type="image/webp"
+              />
+              <source srcset="img/kevin.jpg 1x, img/kevin@2x.jpg 2x" />
+              <img class="" src="img/kevin.jpg" alt="" />
+            </picture>
+
+            <div class="chefs-set__backdrop">
+              <ul class="chefs-set__social-list list">
+                <li class="chefs-set__social-item">
+                  <a
+                    href="./coming-soon.html"
+                    class="chefs-set__social-link link"
+                  >
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="../team-details.html" class="chefs-set__link link"
+                >- Read More</a
+              >
+            </div>
+          </div>
+
+          <p class="chefs-set__name">Kevin luo</p>
+
+          <p class="chefs-set__position">Head Chef</p>
+        </div>
+      </li>
+
+      <li class="chefs-set__item">
+        <div class="chefs-set__card">
+          <div class="chefs-set__overlay">
+            <picture>
+              <source
+                srcset="img/patrick.avif 1x, img/patrick@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/patrick.webp 1x, img/patrick@2x.webp 2x"
+                type="image/webp"
+              />
+              <source srcset="img/patrick.jpg 1x, img/patrick@2x.jpg 2x" />
+              <img class="" src="img/patrick.jpg" alt="" />
+            </picture>
+
+            <div class="chefs-set__backdrop">
+              <ul class="chefs-set__social-list list">
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="../team-details.html" class="chefs-set__link link"
+                >- Read More</a
+              >
+            </div>
+          </div>
+
+          <p class="chefs-set__name">Patrick Choi</p>
+
+          <p class="chefs-set__position">Deputy Chef</p>
+        </div>
+      </li>
+
+      <li class="chefs-set__item">
+        <div class="chefs-set__card">
+          <div class="chefs-set__overlay">
+            <picture>
+              <source
+                srcset="img/jack.avif 1x, img/jack@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/jack.webp 1x, img/jack@2x.webp 2x"
+                type="image/webp"
+              />
+              <source srcset="img/jack.jpg 1x, img/jack@2x.jpg 2x" />
+              <img class="" src="img/jack.jpg" alt="" />
+            </picture>
+
+            <div class="chefs-set__backdrop">
+              <ul class="chefs-set__social-list list">
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="../team-details.html" class="chefs-set__link link"
+                >- Read More</a
+              >
+            </div>
+          </div>
+
+          <p class="chefs-set__name">Jack Biscoff</p>
+
+          <p class="chefs-set__position">Station Chef</p>
+        </div>
+      </li>
+
+      <li class="chefs-set__item">
+        <div class="chefs-set__card">
+          <div class="chefs-set__overlay">
+            <picture>
+              <source
+                srcset="img/stacy.avif 1x, img/stacy@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/stacy.webp 1x, img/stacy@2x.webp 2x"
+                type="image/webp"
+              />
+              <source srcset="img/stacy.jpg 1x, img/stacy@2x.jpg 2x" />
+              <img class="" src="img/stacy.jpg" alt="" />
+            </picture>
+
+            <div class="chefs-set__backdrop">
+              <ul class="chefs-set__social-list list">
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="../team-details.html" class="chefs-set__link link"
+                >- Read More</a
+              >
+            </div>
+          </div>
+
+          <p class="chefs-set__name">Stacy Lee</p>
+
+          <p class="chefs-set__position">Station Chef</p>
+        </div>
+      </li>
+
+      <li class="chefs-set__item">
+        <div class="chefs-set__card">
+          <div class="chefs-set__overlay">
+            <picture>
+              <source
+                srcset="img/aren.avif 1x, img/aren@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/aren.webp 1x, img/aren@2x.webp 2x"
+                type="image/webp"
+              />
+              <source srcset="img/aren.jpg 1x, img/aren@2x.jpg 2x" />
+              <img class="" src="img/aren.jpg" alt="" />
+            </picture>
+
+            <div class="chefs-set__backdrop">
+              <ul class="chefs-set__social-list list">
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="../team-details.html" class="chefs-set__link link"
+                >- Read More</a
+              >
+            </div>
+          </div>
+
+          <p class="chefs-set__name">Aren Goodman</p>
+
+          <p class="chefs-set__position">Junior Chef</p>
+        </div>
+      </li>
+
+      <li class="chefs-set__item">
+        <div class="chefs-set__card">
+          <div class="chefs-set__overlay">
+            <picture>
+              <source
+                srcset="img/javier.avif 1x, img/javier@2x.avif 2x"
+                type="image/avif"
+              />
+              <source
+                srcset="img/javier.webp 1x, img/javier@2x.webp 2x"
+                type="image/webp"
+              />
+              <source srcset="img/javier.jpg 1x, img/javier@2x.jpg 2x" />
+              <img class="" src="img/javier.jpg" alt="" />
+            </picture>
+
+            <div class="chefs-set__backdrop">
+              <ul class="chefs-set__social-list list">
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="chefs-set__social-item">
+                  <a href="./coming-soon.html" class="chefs-set__social-link link">
+                    <svg class="chefs-set__social-svg">
+                      <use href="img/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="../team-details.html" class="chefs-set__link link"
+                >- Read More</a
+              >
+            </div>
+          </div>
+
+          <p class="chefs-set__name">Javier Dowsing</p>
+
+          <p class="chefs-set__position">Junior Chef</p>
+        </div>
+      </li>
+    </ul>
+
+    <svg class="logo">
+      <use href="img/icons.svg#logo"></use>
+    </svg>
+  </div>
+</section>
+
+      <section class="video">   
+    <div class="video-container container">
+          <video
+        id="video-player"
+        class="video-player"
+        controls
+        preload="auto"
+        poster="img/video-poster.avif"
+        data-setup='{}'>
+        <source  src="./files/promo.mp4" type="video/mp4"></source>
+    </video>
+    <button id="play-button" class="play-button">
+        <svg>
+            <use href="img/icons.svg#play"></use>
+        </svg>
+    </button>
+
+    <svg class="video__logo">
+      <use href="img/icons.svg#logo"></use>
+    </svg>
+    </div>  
+</section>
+
+      <section class="awards">
+    <div class="awards__wrapper container">
+        <h3 class="awards__subtitle main-subtitle">Awards & Recognition</h3>
+        <svg class="awards__icon icon-spoon">
+            <use href="./img/icons.svg#spoon"></use>
+        </svg>
+        <h4 class="awards__title main-title">Our Laurels</h4>
+        <ul class="awards__list list">
+            <li class="awards__item">
+                <svg class="icon">
+                  <use href="./img/icons.svg#number-2"></use>
+                </svg>
+                <div class="awards__content">
+                    <h3 class="title">Bib Gourmond</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </li>
+            <li class="awards__item">
+                <svg class="icon">
+                    <use href="./img/icons.svg#number-1"></use>
+                </svg>
+                <div class="awards__content">
+                    <h3 class="title">Rising Star</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </li>
+            <li class="awards__item">
+                <svg class="icon">
+                    <use href="./img/icons.svg#number-5"></use>
+                </svg>
+                <div class="awards__content">
+                    <h3 class="title">AA Hospitality</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </li>
+            <li class="awards__item">
+                <svg class="icon">
+                    <use href="./img/icons.svg#number-3"></use>
+                </svg>
+                <div class="awards__content">
+                    <h3 class="title">Outstanding Chef</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </li>
+        </ul>
+        <!-- <picture class="image">
+          <source srcset="./img/awards-img.avif 1x, ./img/awards-img@2x.avif 2x" type="image/avif">
+          <source srcset="./img/awards-img.webp 1x, ./img/awards-img@2x.webp 2x" type="image/webp">
+          <img srcset="./img/awards-img.jpg 1x, ./img/awards-img@2x.jpg 2x" src="./img/awards-img.jpg" alt="">
+        </picture> -->
+    </div>
+</section>
+
+
+    </main>
+
+
+    <footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="subscribe-form">
+            <h3 class="subscribe-form__subtitle main-subtitle">Newsletter</h3>
+            <svg class="subscribe-form__icon icon-spoon">
+                <use href="./img/icons.svg#spoon"></use>
+            </svg>
+            <h4 class="subscribe-form__title main-title">Subscribe to Our Newsletter</h4>
+            <form class="subscribe-form__form">
+                <h3 class="title">And never miss latest Updates!</h3>
+                <div class="subscribe-form__inner">
+                    <input type="email" name="email" class="subscribe-form__input" placeholder="Email Address" id="user_email_sub"
+                        required>
+                    <button type="submit" class="subscribe-form__btn main-btn">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <svg class="subscribe-form__logo">
+                <use href="./img/icons.svg#logo"></use>
+            </svg>
+        </div>
+        <div class="contact-info">
+            <div class="contact">
+                <h3 class="contact__title">Contact Us</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <address class="contact__text">
+                            9 W 53rd St, New York, NY 10019, USA
+                        </address>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gericht">
+                <h2 class="gericht__title">Gerícht</h2>
+                <p class="gericht__text">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                <svg class="gericht__icon icon-spoon">
+                    <use href="./img/icons.svg#spoon"></use>
+                </svg>
+                <ul class="social__list list">
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#instagram"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3 class="contact__title">Working Hours</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <p class="contact__text">Monday-Friday:<br>
+                        08:00 am -12:00 am</p>
+                    </li>
+                    <li class="contact__item">
+                        <p class="contact__text">Saturday-Sunday:<br>
+                        07:00am -11:00 pm</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__all-rights">2021 Gerícht. All Rights reserved.</p>
+    </div>
+
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="js/app.min.js"></script>
+
+</html>
