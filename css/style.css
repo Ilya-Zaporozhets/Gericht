@@ -595,18 +595,13 @@ img {
   height: 638px;
 }
 
-.no-webp .about{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .about{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .about {
   margin: auto;
   padding-top: 339px;
   padding-bottom: 339px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -619,13 +614,6 @@ img {
   gap: 254px;
 }
 
-.no-webp .about__wrapper::before{
-  background-image: -webkit-image-set(url("../img/about-knives@2x.avif") 2x, url("../img/about-knives.avif") 1x, url("../img/about-knives@2x.webp") 2x, url("../img/about-knives.webp") 1x, url("../img/about-knives@2x.png") 2x, url("../img/about-knives.png") 1x), -webkit-image-set(url("../img/about-g@2x.avif") 2x, url("../img/about-g.avif") 1x, url("../img/about-g@2x.webp") 2x, url("../img/about-g.webp") 1x, url("../img/about-g@2x.png") 2x, url("../img/about-g.png") 1x); }
-
-.no-webp .about__wrapper::before{
-  background-image: -webkit-image-set(url("../img/about-knives@2x.avif") 2x, url("../img/about-knives.avif") 1x, url("../img/about-knives@2x.webp") 2x, url("../img/about-knives.webp") 1x, url("../img/about-knives@2x.png") 2x, url("../img/about-knives.png") 1x), -webkit-image-set(url("../img/about-g@2x.avif") 2x, url("../img/about-g.avif") 1x, url("../img/about-g@2x.webp") 2x, url("../img/about-g.webp") 1x, url("../img/about-g@2x.png") 2x, url("../img/about-g.png") 1x);
-  background-image: image-set(url("../img/about-knives@2x.avif") 2x, url("../img/about-knives.avif") 1x, url("../img/about-knives@2x.webp") 2x, url("../img/about-knives.webp") 1x, url("../img/about-knives@2x.png") 2x, url("../img/about-knives.png") 1x), image-set(url("../img/about-g@2x.avif") 2x, url("../img/about-g.avif") 1x, url("../img/about-g@2x.webp") 2x, url("../img/about-g.webp") 1x, url("../img/about-g@2x.png") 2x, url("../img/about-g.png") 1x); }
-
 .about__wrapper::before {
   position: absolute;
   content: "";
@@ -636,6 +624,8 @@ img {
           transform: translate(-50%, -50%);
   width: 391px;
   height: 703px;
+  background-image: -webkit-image-set(url("../img/about-knives@2x.avif") 2x, url("../img/about-knives.avif") 1x, url("../img/about-knives@2x.webp") 2x, url("../img/about-knives.webp") 1x, url("../img/about-knives@2x.png") 2x, url("../img/about-knives.png") 1x), -webkit-image-set(url("../img/about-g@2x.avif") 2x, url("../img/about-g.avif") 1x, url("../img/about-g@2x.webp") 2x, url("../img/about-g.webp") 1x, url("../img/about-g@2x.png") 2x, url("../img/about-g.png") 1x);
+  background-image: image-set(url("../img/about-knives@2x.avif") 2x, url("../img/about-knives.avif") 1x, url("../img/about-knives@2x.webp") 2x, url("../img/about-knives.webp") 1x, url("../img/about-knives@2x.png") 2x, url("../img/about-knives.png") 1x), image-set(url("../img/about-g@2x.avif") 2x, url("../img/about-g.avif") 1x, url("../img/about-g@2x.webp") 2x, url("../img/about-g.webp") 1x, url("../img/about-g@2x.png") 2x, url("../img/about-g.png") 1x);
   background-size: 84px 703px, 391px 415px;
   background-repeat: no-repeat;
   background-position: center;
@@ -936,17 +926,12 @@ a.ui-button:active,
   font-weight: 400;
 }
 
-.no-webp .menu-set{
-  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url("../img/menu-set-bg@2x.avif") 2x, url("../img/menu-set-bg.avif") 1x, url("../img/menu-set-bg@2x.webp") 2x, url("../img/menu-set-bg.webp") 1x, url("../img/menu-set-bg@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x); }
-
-.no-webp .menu-set{
-  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url("../img/menu-set-bg@2x.avif") 2x, url("../img/menu-set-bg.avif") 1x, url("../img/menu-set-bg@2x.webp") 2x, url("../img/menu-set-bg.webp") 1x, url("../img/menu-set-bg@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x);
-  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), image-set(url("../img/menu-set-bg@2x.avif") 2x, url("../img/menu-set-bg.avif") 1x, url("../img/menu-set-bg@2x.webp") 2x, url("../img/menu-set-bg.webp") 1x, url("../img/menu-set-bg@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x); }
-
 .menu-set {
   padding-top: 254px;
   padding-bottom: 269px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url("../img/menu-set-bg@2x.avif") 2x, url("../img/menu-set-bg.avif") 1x, url("../img/menu-set-bg@2x.webp") 2x, url("../img/menu-set-bg.webp") 1x, url("../img/menu-set-bg@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x);
+  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), image-set(url("../img/menu-set-bg@2x.avif") 2x, url("../img/menu-set-bg.avif") 1x, url("../img/menu-set-bg@2x.webp") 2x, url("../img/menu-set-bg.webp") 1x, url("../img/menu-set-bg@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x);
   background-size: 1920px 900px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1067,13 +1052,6 @@ a.ui-button:active,
   width: 100%;
 }
 
-.no-webp .menu-list::before{
-  background-image: -webkit-image-set(url("../img/menu-img@2x.avif") 2x, url("../img/menu-img.avif") 1x, url("../img/menu-img@2x.webp") 2x, url("../img/menu-img.webp") 1x, url("../img/menu-img@2x.jpg") 2x, url("../img/menu-img.jpg") 1x); }
-
-.no-webp .menu-list::before{
-  background-image: -webkit-image-set(url("../img/menu-img@2x.avif") 2x, url("../img/menu-img.avif") 1x, url("../img/menu-img@2x.webp") 2x, url("../img/menu-img.webp") 1x, url("../img/menu-img@2x.jpg") 2x, url("../img/menu-img.jpg") 1x);
-  background-image: image-set(url("../img/menu-img@2x.avif") 2x, url("../img/menu-img.avif") 1x, url("../img/menu-img@2x.webp") 2x, url("../img/menu-img.webp") 1x, url("../img/menu-img@2x.jpg") 2x, url("../img/menu-img.jpg") 1x); }
-
 .menu-list::before {
   content: "";
   margin: auto;
@@ -1085,6 +1063,8 @@ a.ui-button:active,
           transform: translate(-50%, -50%);
   width: 33%;
   height: 100%;
+  background-image: -webkit-image-set(url("../img/menu-img@2x.avif") 2x, url("../img/menu-img.avif") 1x, url("../img/menu-img@2x.webp") 2x, url("../img/menu-img.webp") 1x, url("../img/menu-img@2x.jpg") 2x, url("../img/menu-img.jpg") 1x);
+  background-image: image-set(url("../img/menu-img@2x.avif") 2x, url("../img/menu-img.avif") 1x, url("../img/menu-img@2x.webp") 2x, url("../img/menu-img.webp") 1x, url("../img/menu-img@2x.jpg") 2x, url("../img/menu-img.jpg") 1x);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1173,16 +1153,11 @@ a.ui-button:active,
   color: var(--primary-text-color);
 }
 
-.no-webp .chefs{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .chefs{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .chefs {
   padding-top: 152px;
   padding-bottom: 152px;
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -2;
@@ -1481,16 +1456,11 @@ a.ui-button:active,
   opacity: 0;
 }
 
-.no-webp .awards{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .awards{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .awards {
   padding-top: 128px;
   padding-bottom: 128px;
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -2;
@@ -1503,13 +1473,6 @@ a.ui-button:active,
   z-index: 0;
 }
 
-.no-webp .awards__wrapper:before{
-  background-image: -webkit-image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x); }
-
-.no-webp .awards__wrapper:before{
-  background-image: -webkit-image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x);
-  background-image: image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x); }
-
 .awards__wrapper:before {
   margin: auto;
   position: absolute;
@@ -1519,18 +1482,13 @@ a.ui-button:active,
   display: block;
   height: 100%;
   width: 37.2%;
+  background-image: -webkit-image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x);
+  background-image: image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: right;
   z-index: -1;
 }
-
-.no-webp .awards__wrapper::after{
-  background-image: -webkit-image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x); }
-
-.no-webp .awards__wrapper::after{
-  background-image: -webkit-image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x);
-  background-image: image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x); }
 
 .awards__wrapper::after {
   position: absolute;
@@ -1539,6 +1497,8 @@ a.ui-button:active,
   right: 15%;
   width: 27.69%;
   height: 54.85%;
+  background-image: -webkit-image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x);
+  background-image: image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1742,16 +1702,11 @@ a.ui-button:active,
   opacity: 0.5;
 }
 
-.no-webp .gallery{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .gallery{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .gallery {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -1862,13 +1817,6 @@ a.ui-button:active,
   padding-bottom: 138px;
 }
 
-.no-webp .bar-hero::before{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .bar-hero::before{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .bar-hero::before {
   content: "";
   position: absolute;
@@ -1880,6 +1828,8 @@ a.ui-button:active,
   width: 100%;
   height: 1100px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2005,18 +1955,13 @@ a.ui-button:active,
   top: 88px;
 }
 
-.no-webp .bar-about{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .bar-about{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .bar-about {
   margin: auto;
   padding-top: 128px;
   padding-bottom: 79px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
@@ -2040,19 +1985,14 @@ a.ui-button:active,
   position: relative;
 }
 
-.no-webp .bar-about__wrapper:before{
-  background-image: -webkit-image-set(url("../img/bar-about-beer@2x.avif") 2x, url("../img/bar-about-beer.avif") 1x, url("../img/bar-about-beer@2x.webp") 2x, url("../img/bar-about-beer.webp") 1x, url("../img/bar-about-beer@2x.jpg") 2x, url("../img/bar-about-beer.jpg") 1x); }
-
-.no-webp .bar-about__wrapper:before{
-  background-image: -webkit-image-set(url("../img/bar-about-beer@2x.avif") 2x, url("../img/bar-about-beer.avif") 1x, url("../img/bar-about-beer@2x.webp") 2x, url("../img/bar-about-beer.webp") 1x, url("../img/bar-about-beer@2x.jpg") 2x, url("../img/bar-about-beer.jpg") 1x);
-  background-image: image-set(url("../img/bar-about-beer@2x.avif") 2x, url("../img/bar-about-beer.avif") 1x, url("../img/bar-about-beer@2x.webp") 2x, url("../img/bar-about-beer.webp") 1x, url("../img/bar-about-beer@2x.jpg") 2x, url("../img/bar-about-beer.jpg") 1x); }
-
 .bar-about__wrapper:before {
   content: "";
   display: block;
   width: 523px;
   height: 702px;
   background-color: #040404;
+  background-image: -webkit-image-set(url("../img/bar-about-beer@2x.avif") 2x, url("../img/bar-about-beer.avif") 1x, url("../img/bar-about-beer@2x.webp") 2x, url("../img/bar-about-beer.webp") 1x, url("../img/bar-about-beer@2x.jpg") 2x, url("../img/bar-about-beer.jpg") 1x);
+  background-image: image-set(url("../img/bar-about-beer@2x.avif") 2x, url("../img/bar-about-beer.avif") 1x, url("../img/bar-about-beer@2x.webp") 2x, url("../img/bar-about-beer.webp") 1x, url("../img/bar-about-beer@2x.jpg") 2x, url("../img/bar-about-beer.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2067,19 +2007,14 @@ a.ui-button:active,
           flex-direction: column;
 }
 
-.no-webp .bar-about__inner:before{
-  background-image: -webkit-image-set(url("../img/bar-about-cocktail@2x.avif") 2x, url("../img/bar-about-cocktail.avif") 1x, url("../img/bar-about-cocktail@2x.webp") 2x, url("../img/bar-about-cocktail.webp") 1x, url("../img/bar-about-cocktail@2x.jpg") 2x, url("../img/bar-about-cocktail.jpg") 1x); }
-
-.no-webp .bar-about__inner:before{
-  background-image: -webkit-image-set(url("../img/bar-about-cocktail@2x.avif") 2x, url("../img/bar-about-cocktail.avif") 1x, url("../img/bar-about-cocktail@2x.webp") 2x, url("../img/bar-about-cocktail.webp") 1x, url("../img/bar-about-cocktail@2x.jpg") 2x, url("../img/bar-about-cocktail.jpg") 1x);
-  background-image: image-set(url("../img/bar-about-cocktail@2x.avif") 2x, url("../img/bar-about-cocktail.avif") 1x, url("../img/bar-about-cocktail@2x.webp") 2x, url("../img/bar-about-cocktail.webp") 1x, url("../img/bar-about-cocktail@2x.jpg") 2x, url("../img/bar-about-cocktail.jpg") 1x); }
-
 .bar-about__inner:before {
   content: "";
   display: block;
   width: 634px;
   height: 385px;
   background-color: #040404;
+  background-image: -webkit-image-set(url("../img/bar-about-cocktail@2x.avif") 2x, url("../img/bar-about-cocktail.avif") 1x, url("../img/bar-about-cocktail@2x.webp") 2x, url("../img/bar-about-cocktail.webp") 1x, url("../img/bar-about-cocktail@2x.jpg") 2x, url("../img/bar-about-cocktail.jpg") 1x);
+  background-image: image-set(url("../img/bar-about-cocktail@2x.avif") 2x, url("../img/bar-about-cocktail.avif") 1x, url("../img/bar-about-cocktail@2x.webp") 2x, url("../img/bar-about-cocktail.webp") 1x, url("../img/bar-about-cocktail@2x.jpg") 2x, url("../img/bar-about-cocktail.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2192,17 +2127,12 @@ a.ui-button:active,
   opacity: 1;
 }
 
-.no-webp .happy-hours{
-  background-image: -webkit-image-set(url("../img/happy-hours-bg@2x.avif") 2x, url("../img/happy-hours-bg.avif") 1x, url("../img/happy-hours-bg@2x.webp") 2x, url("../img/happy-hours-bg.webp") 1x, url("../img/happy-hours-bg@2x.jpg") 2x, url("../img/happy-hours-bg.jpg") 1x); }
-
-.no-webp .happy-hours{
-  background-image: -webkit-image-set(url("../img/happy-hours-bg@2x.avif") 2x, url("../img/happy-hours-bg.avif") 1x, url("../img/happy-hours-bg@2x.webp") 2x, url("../img/happy-hours-bg.webp") 1x, url("../img/happy-hours-bg@2x.jpg") 2x, url("../img/happy-hours-bg.jpg") 1x);
-  background-image: image-set(url("../img/happy-hours-bg@2x.avif") 2x, url("../img/happy-hours-bg.avif") 1x, url("../img/happy-hours-bg@2x.webp") 2x, url("../img/happy-hours-bg.webp") 1x, url("../img/happy-hours-bg@2x.jpg") 2x, url("../img/happy-hours-bg.jpg") 1x); }
-
 .happy-hours {
   margin: auto;
   height: 900px;
   background-color: var(--bcg-color);
+  background-image: -webkit-image-set(url("../img/happy-hours-bg@2x.avif") 2x, url("../img/happy-hours-bg.avif") 1x, url("../img/happy-hours-bg@2x.webp") 2x, url("../img/happy-hours-bg.webp") 1x, url("../img/happy-hours-bg@2x.jpg") 2x, url("../img/happy-hours-bg.jpg") 1x);
+  background-image: image-set(url("../img/happy-hours-bg@2x.avif") 2x, url("../img/happy-hours-bg.avif") 1x, url("../img/happy-hours-bg@2x.webp") 2x, url("../img/happy-hours-bg.webp") 1x, url("../img/happy-hours-bg@2x.jpg") 2x, url("../img/happy-hours-bg.jpg") 1x);
   background-size: 1920px 900px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2246,18 +2176,13 @@ a.ui-button:active,
   text-transform: capitalize;
 }
 
-.no-webp .find-us{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .find-us{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .find-us {
   margin: auto;
   padding-top: 128px;
   padding-bottom: 128px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2428,17 +2353,12 @@ a.ui-button:active,
   border: 1px solid var(--main-color);
 }
 
-.no-webp .pages-hero{
-  background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), -webkit-image-set(url("../img/pages-hero@2x.avif") 2x, url("../img/pages-hero.avif") 1x, url("../img/pages-hero@2x.webp") 2x, url("../img/pages-hero.webp") 1x, url("../img/pages-hero@2x.jpg") 2x, url("../img/pages-hero.jpg") 1x); }
-
-.no-webp .pages-hero{
-  background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), -webkit-image-set(url("../img/pages-hero@2x.avif") 2x, url("../img/pages-hero.avif") 1x, url("../img/pages-hero@2x.webp") 2x, url("../img/pages-hero.webp") 1x, url("../img/pages-hero@2x.jpg") 2x, url("../img/pages-hero.jpg") 1x);
-  background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), image-set(url("../img/pages-hero@2x.avif") 2x, url("../img/pages-hero.avif") 1x, url("../img/pages-hero@2x.webp") 2x, url("../img/pages-hero.webp") 1x, url("../img/pages-hero@2x.jpg") 2x, url("../img/pages-hero.jpg") 1x); }
-
 .pages-hero {
   padding-top: 254px;
   padding-bottom: 254px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), -webkit-image-set(url("../img/pages-hero@2x.avif") 2x, url("../img/pages-hero.avif") 1x, url("../img/pages-hero@2x.webp") 2x, url("../img/pages-hero.webp") 1x, url("../img/pages-hero@2x.jpg") 2x, url("../img/pages-hero.jpg") 1x);
+  background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), image-set(url("../img/pages-hero@2x.avif") 2x, url("../img/pages-hero.avif") 1x, url("../img/pages-hero@2x.webp") 2x, url("../img/pages-hero.webp") 1x, url("../img/pages-hero@2x.jpg") 2x, url("../img/pages-hero.jpg") 1x);
   background-size: 1920px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2514,13 +2434,6 @@ a.ui-button:active,
   opacity: 0.4;
 }
 
-.no-webp .our-chefs-section{
-  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url("../img/our-chefs@2x.avif") type("image/avif") 2x, url("../img/our-chefs.avif") type("image/avif") 1x, url("../img/our-chefs@2x.webp") type("image/webp") 2x, url("../img/our-chefswebp") type("image/webp") 1x, url("../img/our-chefs@2x.jpg") 2x, url("../img/our-chefs.jpg") 1x); }
-
-.no-webp .our-chefs-section{
-  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url("../img/our-chefs@2x.avif") type("image/avif") 2x, url("../img/our-chefs.avif") type("image/avif") 1x, url("../img/our-chefs@2x.webp") type("image/webp") 2x, url("../img/our-chefs.webp") type("image/webp") 1x, url("../img/our-chefs@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x);
-  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), image-set(url("../img/our-chefs@2x.avif") type("image/avif") 2x, url("../img/our-chefs.avif") type("image/avif") 1x, url("../img/our-chefs@2x.webp") type("image/webp") 2x, url("../img/our-chefs.webp") type("image/webp") 1x, url("../img/our-chefs@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x); }
-
 .our-chefs-section {
   width: 100%;
   height: 100vh;
@@ -2534,6 +2447,9 @@ a.ui-button:active,
       -ms-flex-align: center;
           align-items: center;
   background-color: #0c0c0c;
+  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url("../img/our-chefs@2x.avif") type("image/avif") 2x, url("../img/our-chefs.avif") type("image/avif") 1x, url("../img/our-chefs@2x.webp") type("image/webp") 2x, url("../img/our-chefswebp") type("image/webp") 1x, url("../img/our-chefs@2x.jpg") 2x, url("../img/our-chefs.jpg") 1x);
+  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url("../img/our-chefs@2x.avif") type("image/avif") 2x, url("../img/our-chefs.avif") type("image/avif") 1x, url("../img/our-chefs@2x.webp") type("image/webp") 2x, url("../img/our-chefs.webp") type("image/webp") 1x, url("../img/our-chefs@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x);
+  background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), image-set(url("../img/our-chefs@2x.avif") type("image/avif") 2x, url("../img/our-chefs.avif") type("image/avif") 1x, url("../img/our-chefs@2x.webp") type("image/webp") 2x, url("../img/our-chefs.webp") type("image/webp") 1x, url("../img/our-chefs@2x.jpg") 2x, url("../img/menu-set-bg.jpg") 1x);
   background-size: 1920px 900px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2557,18 +2473,13 @@ a.ui-button:active,
   text-align: center;
 }
 
-.no-webp .chefs-set{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .chefs-set{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .chefs-set {
   position: relative;
   padding-top: 150px;
   padding-bottom: 150px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: 100% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -3151,17 +3062,12 @@ a.ui-button:active,
   fill: var(--main-color);
 }
 
-.no-webp .footer{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .footer{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .footer {
   padding-top: 113px;
   padding-bottom: 144px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: 100% 100%, 100% 70%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -3669,16 +3575,11 @@ a.ui-button:active,
   height: 100%;
 }
 
-.no-webp .feedback{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .feedback{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .feedback {
   padding-top: 128px;
   padding-bottom: 128px;
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x, url("../img/section-bg.avif") type("image/avif") 1x, url("../img/section-bg@2x.webp") type("image/webp") 2x, url("../img/section-bg.webp") type("image/webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -2;
@@ -3689,13 +3590,6 @@ a.ui-button:active,
   z-index: 0;
 }
 
-.no-webp .feedback__wrapper:before{
-  background-image: -webkit-image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x); }
-
-.no-webp .feedback__wrapper:before{
-  background-image: -webkit-image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x);
-  background-image: image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x); }
-
 .feedback__wrapper:before {
   margin: auto;
   position: absolute;
@@ -3705,18 +3599,13 @@ a.ui-button:active,
   display: block;
   height: 100%;
   width: 37.2%;
+  background-image: -webkit-image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x);
+  background-image: image-set(url("../img/awards-img@2x.avif") 2x, url("../img/awards-img.avif") 1x, url("../img/awards-img@2x.webp") 2x, url("../img/awards-img.webp") 1x, url("../img/awards-img@2x.jpg") 2x, url("../img/awards-img.jpg") 1x);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: right;
   z-index: -1;
 }
-
-.no-webp .feedback__wrapper::after{
-  background-image: -webkit-image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x); }
-
-.no-webp .feedback__wrapper::after{
-  background-image: -webkit-image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x);
-  background-image: image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x); }
 
 .feedback__wrapper::after {
   position: absolute;
@@ -3725,6 +3614,8 @@ a.ui-button:active,
   right: 15%;
   width: 27.69%;
   height: 54.85%;
+  background-image: -webkit-image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x);
+  background-image: image-set(url("../img/awards-g@2x.avif") 2x, url("../img/awards-g.avif") 1x, url("../img/awards-g@2x.webp") 2x, url("../img/awards-g.webp") 1x, url("../img/awards-g@2x.png") 2x, url("../img/awards-g.png") 1x);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -3798,17 +3689,12 @@ a.ui-button:active,
   width: 129px;
 }
 
-.no-webp .footer{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .footer{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .footer {
   padding-top: 113px;
   padding-bottom: 144px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: 100% 100%, 100% 70%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -4078,13 +3964,6 @@ a.ui-button:active,
   text-align: center;
 }
 
-.no-webp .coming-soon::before{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
-.no-webp .coming-soon::before{
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
-  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x); }
-
 .coming-soon::before {
   content: "";
   position: absolute;
@@ -4096,6 +3975,8 @@ a.ui-button:active,
   width: 100%;
   height: 1100px;
   background-color: var(--bcg-color);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
+  background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url("../img/section-bg@2x.avif") 2x, url("../img/section-bg.avif") 1x, url("../img/section-bg@2x.webp") 2x, url("../img/section-bg.webp") 1x, url("../img/section-bg@2x.jpg") 2x, url("../img/section-bg.jpg") 1x);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -4186,99 +4067,3 @@ a.ui-button:active,
     width: 1300px;
   }
 }
-
-.webp .about{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .about{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .about__wrapper::before{ background-image: -webkit-image-set(url(../img/about-knives@2x.avif) 2x, url(../img/about-knives.avif) 1x, url(../img/about-knives@2x.webp) 2x, url(../img/about-knives.webp) 1x, url(../img/about-knives@2x.webp) 2x, url(../img/about-knives.webp) 1x), -webkit-image-set(url(../img/about-g@2x.avif) 2x, url(../img/about-g.avif) 1x, url(../img/about-g@2x.webp) 2x, url(../img/about-g.webp) 1x, url(../img/about-g@2x.webp) 2x, url(../img/about-g.webp) 1x); }
-
-.webp .about__wrapper::before{ background-image: -webkit-image-set(url(../img/about-knives@2x.avif) 2x, url(../img/about-knives.avif) 1x, url(../img/about-knives@2x.webp) 2x, url(../img/about-knives.webp) 1x, url(../img/about-knives@2x.webp) 2x, url(../img/about-knives.webp) 1x), -webkit-image-set(url(../img/about-g@2x.avif) 2x, url(../img/about-g.avif) 1x, url(../img/about-g@2x.webp) 2x, url(../img/about-g.webp) 1x, url(../img/about-g@2x.webp) 2x, url(../img/about-g.webp) 1x); background-image: image-set(url(../img/about-knives@2x.avif) 2x, url(../img/about-knives.avif) 1x, url(../img/about-knives@2x.webp) 2x, url(../img/about-knives.webp) 1x, url(../img/about-knives@2x.webp) 2x, url(../img/about-knives.webp) 1x), image-set(url(../img/about-g@2x.avif) 2x, url(../img/about-g.avif) 1x, url(../img/about-g@2x.webp) 2x, url(../img/about-g.webp) 1x, url(../img/about-g@2x.webp) 2x, url(../img/about-g.webp) 1x); }
-
-.webp .menu-set{ background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url(../img/menu-set-bg@2x.avif) 2x, url(../img/menu-set-bg.avif) 1x, url(../img/menu-set-bg@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x, url(../img/menu-set-bg@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x); }
-
-.webp .menu-set{ background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url(../img/menu-set-bg@2x.avif) 2x, url(../img/menu-set-bg.avif) 1x, url(../img/menu-set-bg@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x, url(../img/menu-set-bg@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x); background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), image-set(url(../img/menu-set-bg@2x.avif) 2x, url(../img/menu-set-bg.avif) 1x, url(../img/menu-set-bg@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x, url(../img/menu-set-bg@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x); }
-
-.webp .menu-list::before{ background-image: -webkit-image-set(url(../img/menu-img@2x.avif) 2x, url(../img/menu-img.avif) 1x, url(../img/menu-img@2x.webp) 2x, url(../img/menu-img.webp) 1x, url(../img/menu-img@2x.webp) 2x, url(../img/menu-img.webp) 1x); }
-
-.webp .menu-list::before{ background-image: -webkit-image-set(url(../img/menu-img@2x.avif) 2x, url(../img/menu-img.avif) 1x, url(../img/menu-img@2x.webp) 2x, url(../img/menu-img.webp) 1x, url(../img/menu-img@2x.webp) 2x, url(../img/menu-img.webp) 1x); background-image: image-set(url(../img/menu-img@2x.avif) 2x, url(../img/menu-img.avif) 1x, url(../img/menu-img@2x.webp) 2x, url(../img/menu-img.webp) 1x, url(../img/menu-img@2x.webp) 2x, url(../img/menu-img.webp) 1x); }
-
-.webp .chefs{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) type("image/avif") 2x, url(../img/section-bg.avif) type("image/avif") 1x, url(../img/section-bg@2x.webp) type("image/webp") 2x, url(../img/section-bg.webp) type("image/webp") 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .chefs{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) type("image/avif") 2x, url(../img/section-bg.avif) type("image/avif") 1x, url(../img/section-bg@2x.webp) type("image/webp") 2x, url(../img/section-bg.webp) type("image/webp") 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) type("image/avif") 2x, url(../img/section-bg.avif) type("image/avif") 1x, url(../img/section-bg@2x.webp) type("image/webp") 2x, url(../img/section-bg.webp) type("image/webp") 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .awards{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .awards{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .awards__wrapper:before{ background-image: -webkit-image-set(url(../img/awards-img@2x.avif) 2x, url(../img/awards-img.avif) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x); }
-
-.webp .awards__wrapper:before{ background-image: -webkit-image-set(url(../img/awards-img@2x.avif) 2x, url(../img/awards-img.avif) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x); background-image: image-set(url(../img/awards-img@2x.avif) 2x, url(../img/awards-img.avif) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x); }
-
-.webp .awards__wrapper::after{ background-image: -webkit-image-set(url(../img/awards-g@2x.avif) 2x, url(../img/awards-g.avif) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x); }
-
-.webp .awards__wrapper::after{ background-image: -webkit-image-set(url(../img/awards-g@2x.avif) 2x, url(../img/awards-g.avif) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x); background-image: image-set(url(../img/awards-g@2x.avif) 2x, url(../img/awards-g.avif) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x); }
-
-.webp .gallery{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .gallery{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .bar-hero::before{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .bar-hero::before{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .bar-about{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .bar-about{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .bar-about__wrapper:before{ background-image: -webkit-image-set(url(../img/bar-about-beer@2x.avif) 2x, url(../img/bar-about-beer.avif) 1x, url(../img/bar-about-beer@2x.webp) 2x, url(../img/bar-about-beer.webp) 1x, url(../img/bar-about-beer@2x.webp) 2x, url(../img/bar-about-beer.webp) 1x); }
-
-.webp .bar-about__wrapper:before{ background-image: -webkit-image-set(url(../img/bar-about-beer@2x.avif) 2x, url(../img/bar-about-beer.avif) 1x, url(../img/bar-about-beer@2x.webp) 2x, url(../img/bar-about-beer.webp) 1x, url(../img/bar-about-beer@2x.webp) 2x, url(../img/bar-about-beer.webp) 1x); background-image: image-set(url(../img/bar-about-beer@2x.avif) 2x, url(../img/bar-about-beer.avif) 1x, url(../img/bar-about-beer@2x.webp) 2x, url(../img/bar-about-beer.webp) 1x, url(../img/bar-about-beer@2x.webp) 2x, url(../img/bar-about-beer.webp) 1x); }
-
-.webp .bar-about__inner:before{ background-image: -webkit-image-set(url(../img/bar-about-cocktail@2x.avif) 2x, url(../img/bar-about-cocktail.avif) 1x, url(../img/bar-about-cocktail@2x.webp) 2x, url(../img/bar-about-cocktail.webp) 1x, url(../img/bar-about-cocktail@2x.webp) 2x, url(../img/bar-about-cocktail.webp) 1x); }
-
-.webp .bar-about__inner:before{ background-image: -webkit-image-set(url(../img/bar-about-cocktail@2x.avif) 2x, url(../img/bar-about-cocktail.avif) 1x, url(../img/bar-about-cocktail@2x.webp) 2x, url(../img/bar-about-cocktail.webp) 1x, url(../img/bar-about-cocktail@2x.webp) 2x, url(../img/bar-about-cocktail.webp) 1x); background-image: image-set(url(../img/bar-about-cocktail@2x.avif) 2x, url(../img/bar-about-cocktail.avif) 1x, url(../img/bar-about-cocktail@2x.webp) 2x, url(../img/bar-about-cocktail.webp) 1x, url(../img/bar-about-cocktail@2x.webp) 2x, url(../img/bar-about-cocktail.webp) 1x); }
-
-.webp .happy-hours{ background-image: -webkit-image-set(url(../img/happy-hours-bg@2x.avif) 2x, url(../img/happy-hours-bg.avif) 1x, url(../img/happy-hours-bg@2x.webp) 2x, url(../img/happy-hours-bg.webp) 1x, url(../img/happy-hours-bg@2x.webp) 2x, url(../img/happy-hours-bg.webp) 1x); }
-
-.webp .happy-hours{ background-image: -webkit-image-set(url(../img/happy-hours-bg@2x.avif) 2x, url(../img/happy-hours-bg.avif) 1x, url(../img/happy-hours-bg@2x.webp) 2x, url(../img/happy-hours-bg.webp) 1x, url(../img/happy-hours-bg@2x.webp) 2x, url(../img/happy-hours-bg.webp) 1x); background-image: image-set(url(../img/happy-hours-bg@2x.avif) 2x, url(../img/happy-hours-bg.avif) 1x, url(../img/happy-hours-bg@2x.webp) 2x, url(../img/happy-hours-bg.webp) 1x, url(../img/happy-hours-bg@2x.webp) 2x, url(../img/happy-hours-bg.webp) 1x); }
-
-.webp .find-us{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .find-us{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .pages-hero{ background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), -webkit-image-set(url(../img/pages-hero@2x.avif) 2x, url(../img/pages-hero.avif) 1x, url(../img/pages-hero@2x.webp) 2x, url(../img/pages-hero.webp) 1x, url(../img/pages-hero@2x.webp) 2x, url(../img/pages-hero.webp) 1x); }
-
-.webp .pages-hero{ background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), -webkit-image-set(url(../img/pages-hero@2x.avif) 2x, url(../img/pages-hero.avif) 1x, url(../img/pages-hero@2x.webp) 2x, url(../img/pages-hero.webp) 1x, url(../img/pages-hero@2x.webp) 2x, url(../img/pages-hero.webp) 1x); background-image: linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%), image-set(url(../img/pages-hero@2x.avif) 2x, url(../img/pages-hero.avif) 1x, url(../img/pages-hero@2x.webp) 2x, url(../img/pages-hero.webp) 1x, url(../img/pages-hero@2x.webp) 2x, url(../img/pages-hero.webp) 1x); }
-
-.webp .our-chefs-section{ background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url(../img/our-chefs@2x.avif) type("image/avif") 2x, url(../img/our-chefs.avif) type("image/avif") 1x, url(../img/our-chefs@2x.webp) type("image/webp") 2x, url(../img/our-chefswebp) type("image/webp") 1x, url(../img/our-chefs@2x.webp) 2x, url(../img/our-chefs.webp) 1x); }
-
-.webp .our-chefs-section{ background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), -webkit-image-set(url(../img/our-chefs@2x.avif) type("image/avif") 2x, url(../img/our-chefs.avif) type("image/avif") 1x, url(../img/our-chefs@2x.webp) type("image/webp") 2x, url(../img/our-chefs.webp) type("image/webp") 1x, url(../img/our-chefs@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x); background-image: linear-gradient(152deg, rgba(12, 12, 12, 0.4) 50%, rgba(12, 12, 12, 0.4) 50%), image-set(url(../img/our-chefs@2x.avif) type("image/avif") 2x, url(../img/our-chefs.avif) type("image/avif") 1x, url(../img/our-chefs@2x.webp) type("image/webp") 2x, url(../img/our-chefs.webp) type("image/webp") 1x, url(../img/our-chefs@2x.webp) 2x, url(../img/menu-set-bg.webp) 1x); }
-
-.webp .chefs-set{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .chefs-set{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .footer{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .footer{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .feedback{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) type("image/avif") 2x, url(../img/section-bg.avif) type("image/avif") 1x, url(../img/section-bg@2x.webp) type("image/webp") 2x, url(../img/section-bg.webp) type("image/webp") 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .feedback{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) type("image/avif") 2x, url(../img/section-bg.avif) type("image/avif") 1x, url(../img/section-bg@2x.webp) type("image/webp") 2x, url(../img/section-bg.webp) type("image/webp") 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) type("image/avif") 2x, url(../img/section-bg.avif) type("image/avif") 1x, url(../img/section-bg@2x.webp) type("image/webp") 2x, url(../img/section-bg.webp) type("image/webp") 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .feedback__wrapper:before{ background-image: -webkit-image-set(url(../img/awards-img@2x.avif) 2x, url(../img/awards-img.avif) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x); }
-
-.webp .feedback__wrapper:before{ background-image: -webkit-image-set(url(../img/awards-img@2x.avif) 2x, url(../img/awards-img.avif) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x); background-image: image-set(url(../img/awards-img@2x.avif) 2x, url(../img/awards-img.avif) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x, url(../img/awards-img@2x.webp) 2x, url(../img/awards-img.webp) 1x); }
-
-.webp .feedback__wrapper::after{ background-image: -webkit-image-set(url(../img/awards-g@2x.avif) 2x, url(../img/awards-g.avif) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x); }
-
-.webp .feedback__wrapper::after{ background-image: -webkit-image-set(url(../img/awards-g@2x.avif) 2x, url(../img/awards-g.avif) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x); background-image: image-set(url(../img/awards-g@2x.avif) 2x, url(../img/awards-g.avif) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x, url(../img/awards-g@2x.webp) 2x, url(../img/awards-g.webp) 1x); }
-
-.webp .footer{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .footer{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .coming-soon::before{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
-
-.webp .coming-soon::before{ background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), -webkit-image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); background-image: linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%), image-set(url(../img/section-bg@2x.avif) 2x, url(../img/section-bg.avif) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x, url(../img/section-bg@2x.webp) 2x, url(../img/section-bg.webp) 1x); }
