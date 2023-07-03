@@ -3,12 +3,12 @@
 
   justify-content: center;
   align-items: center;
-  padding: 8px 32px;
+  padding: 8px 24px;
 
   text-align: center;
   font-family: var(--title-fonts);
 
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.7;
 
   cursor: pointer;
@@ -22,6 +22,13 @@
   transition: .5s;
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1330px) {
+    font-size: 16px;
+  }
+
   &:before {
       content: '';
       display: block;
