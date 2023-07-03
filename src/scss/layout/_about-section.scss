@@ -90,9 +90,13 @@
     &__text {
         margin-top: 32px;
         max-width: 523px;
+        height: 200px;
         font-family: var(--main-fonts);
         @include font-text;
         color: var(--primary-text-color);
+        @media screen and (min-width: 768px) {
+            height: auto;
+        }
     }
     &__btn {
         margin-top: 32px;

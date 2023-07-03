@@ -132,6 +132,18 @@
   position: absolute;
   top: 40%;
   right: 0;
+  width: 60px;
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    width: 73px;
+    height: 73px;
+  }
+
+  @media screen and (min-width: 1330px) {
+    width: 146px;
+    height: 146px;
+  }
 }
 
 .chefs-set__overlay:hover .chefs-set__backdrop,

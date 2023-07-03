@@ -28,9 +28,21 @@
     }
     &__logo {
         position: absolute;
-        top: -70px;
+        top: -10px;
         left: 0px;
-        width: 127px;
+        width: 60px;
+        height: 60px;
+    
+        @media screen and (min-width: 768px) {
+            width: 73px;
+            height: 73px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            width: 146px;
+            height: 146px;
+            top: -70px;
+            }
     }
 }
 .about-video-player {
