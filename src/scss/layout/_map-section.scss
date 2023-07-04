@@ -1,7 +1,15 @@
 .map {
-    padding-bottom: 152px;
-    padding-top: 152px;
+    padding-bottom: 52px;
+    padding-top: 52px;
     background-color: var(--bcg-color);
+    @media screen and (min-width: 768px) {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    @media screen and (min-width: 1330px) {
+        padding-bottom: 152px;
+        padding-top: 152px;
+    }
     .map {
         width: 100%;
         height: 100%;

@@ -66,11 +66,18 @@
         gap: 8px;
         &::after {
             content: url(../img/icons.svg#arrow-right);
-            padding: 4px 3px;
             display: block;
-            width: 24px;
-            height: 24px;
-            
+            width: 14px;
+            height: 18px;
+            @media screen and (min-width: 768px) {
+                width: 16px;
+                height: 16px;
+            }
+        
+            @media screen and (min-width: 1330px) {
+                width: 24px;
+                height: 24px;
+            }
         }
         &:last-child {
             &::after {

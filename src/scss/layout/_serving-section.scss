@@ -1,7 +1,15 @@
 .serving {
-    padding-top: 196px;
-    padding-bottom: 152px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: var(--bcg-color);
+    @media screen and (min-width: 768px) {
+        padding-top: 88px;
+        padding-bottom: 75px;
+    }
+    @media screen and (min-width: 1330px) {
+        padding-top: 196px;
+        padding-bottom: 152px;
+    }
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -12,15 +20,20 @@
     }
     &__title {
         text-align: center;
-        width: 1128px;
+        @media screen and (min-width: 1330px) {
+            width: 1128px;
+        }
     }
     &__text {
         margin-top: 40px;
-        width: 868px;
+        
         text-align: center;
         font-family: var(--main-fonts);
         @include font-text;
         color: var(--primary-text-color);
+        @media screen and (min-width: 1330px) {
+            width: 868px;
+        }
     }
     &__list {
         margin-top: 40px;
@@ -30,8 +43,11 @@
     }
     &__link {
         display: block;
-        width: 137px;
-        height: 44px;
+        width: 110px;
+        @media screen and (min-width: 1330px) {
+            height: 44px;
+            width: 137px;
+        }
     }
     &__btn {
         color: var(--title-text-color);

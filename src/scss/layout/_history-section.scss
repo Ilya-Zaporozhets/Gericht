@@ -1,8 +1,16 @@
 .history {
-    padding-top: 152px;
-    padding-bottom: 152px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: var(--bcg-color);
+    @media screen and (min-width: 768px) {
+        padding-top: 76px;
+        padding-bottom: 76px;
+    }
 
+    @media screen and (min-width: 1330px) {
+        padding-top: 152px;
+        padding-bottom: 152px;
+    }
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -11,28 +19,50 @@
     &__icon {
         margin-top: 8px;
     }
+    &__title {
+        text-align: center;
+    }
     &__inner {
         margin-top: 64px;
         display: flex;
-        gap: 143px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        @media screen and (min-width: 1330px) {
+            flex-direction: row;
+            gap: 143px;
+            align-items: flex-start;
+        }
+        
     }
     &__left {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 40px;
-        width: 523px;
-
+        @media screen and (min-width: 768px) {
+            width: 523px;
+        }
         .text {
             font-family: var(--main-fonts);
-            @include font-text;
+            @include mobile-font-text;
             color: var(--primary-text-color);
+            @media screen and (min-width: 768px) {
+                @include tablet-font-text;
+            }
+            @media screen and (min-width: 768px) {
+                @include font-text;
+            }
+
         }
     }
     &__right {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        width: 634px;
+        @media screen and (min-width: 768px) {
+            width: 634px;
+        }
 
         .title {
             color: var(--main-color);
@@ -41,14 +71,27 @@
         }
         .list {
             display: flex;
-            gap: 128px;
+            gap: 32px;
+            @media screen and (min-width: 768px) {
+                gap: 64px;
+            }
+            @media screen and (min-width: 1330px) {
+                gap: 128px;
+            }
             &__item {
-                width: calc((100% - 256px)/3);
+                width: calc((100% - 64px)/3);
                 position: relative;
+                @media screen and (min-width: 768px) {
+                    width: calc((100% - 128px)/3);
+                }
+            
+                @media screen and (min-width: 1330px) {
+                    width: calc((100% - 256px)/3);
+                }
 
                 &::after {
                     content: url(../img/icons.svg#vertical-line-login);
-                    display: block;
+                    display: none;
                     width: 128px;
                     height: 128px;
 
@@ -56,6 +99,9 @@
                     right: -128px;
                     top: 50%;
                     transform: translateY(-50%);
+                    @media screen and (min-width: 1330px) {
+                        display: block;
+                    }
                 }
                 &:last-child {
                     &::after {
@@ -66,8 +112,15 @@
             &__subtitle {
                 color: var(--main-color);
                 text-transform: capitalize;
-                @include font-title($fs: 45px, $lh: 59px, $ls: 4%);
+                @include font-title($fs: 24px, $lh: 32px, $ls: 4%);
                 font-feature-settings: 'tnum' on, 'lnum' on;
+                @media screen and (min-width: 768px) {
+                    @include font-title($fs: 30px, $lh: 40px, $ls: 4%);
+                }
+            
+                @media screen and (min-width: 1330px) {
+                    @include font-title($fs: 45px, $lh: 59px, $ls: 4%);
+                }
             }
             &__icon {
                 margin-top: 8px;
@@ -75,7 +128,14 @@
             &__text {
                 margin-top: 8px;
                 color: var(--title-text-color);
-                @include font-title($ff: var(--CormorantUpright-Regular), $fw: 400, $fs: 32px, $lh: 42px, $ls: 4%);
+                @include font-title($ff: var(--CormorantUpright-Regular), $fw: 400, $fs: 16px, $lh: 22px, $ls: 4%);
+                @media screen and (min-width: 768px) {
+                    @include font-title($ff: var(--CormorantUpright-Regular), $fw: 400, $fs: 20px, $lh: 28px, $ls: 4%);
+                }
+            
+                @media screen and (min-width: 1330px) {
+                    @include font-title($ff: var(--CormorantUpright-Regular), $fw: 400, $fs: 32px, $lh: 42px, $ls: 4%);
+                }
             }
         }
     }

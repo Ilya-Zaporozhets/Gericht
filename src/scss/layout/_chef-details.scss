@@ -1,15 +1,29 @@
 .chef-details {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (min-width: 1330px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
 
   background-color: var(--bcg-color);
 
   &__resume {
     position: relative;
     display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 280px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 128px;
+    }
 
     & .logo {
       position: absolute;
@@ -31,10 +45,14 @@
   }
 
   &__photo {
-    margin-right: 34px;
+    @media screen and (min-width: 768px) {
+      margin-right: 34px;
+    }
   }
   &__resume-text {
-    width: 600px;
+    @media screen and (min-width: 1330px) {
+      width: 600px;
+    }
   }
 
   &__resume-position {
@@ -108,28 +126,56 @@
 
   &__achievements {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1330px) {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+  &__achievements-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1330px) {
+      align-items: flex-start;
+    }
   }
 
   &__achievements-title {
     margin-bottom: 64px;
 
     font-family: var(--secondary-fonts);
-    font-size: 64px;
+    font-size: 36px;
     line-height: 1.3;
-
+    text-align: center;
     color: var(--main-color);
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+    }
+    @media screen and (min-width: 1330px) {
+      font-size: 64px;
+    }
   }
 
   &__achievements-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 32px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__achievements-item {
     display: flex;
     width: 300px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 32px)/2);
+    }
   }
 
   &__achievements-item .icon {
@@ -161,5 +207,12 @@
 
   &__achievements-img {
     width: 100%;
+    order: -1;
+    @media screen and (min-width: 1330px) {
+      order: 1;
+    }
+    img {
+      margin: auto;
+    }
   }
 }
