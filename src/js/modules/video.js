@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const playButton = document.getElementById("play-button");
   const playLogo = document.querySelector(".video__logo");
 
+  if (!videoPlayer) {
+    return; 
+  }
+
   // Налаштування плеєра
   videoPlayer.controls = false;
   videoPlayer.autoplay = false;
