@@ -1,6 +1,6 @@
 .footer {
     padding-top: 113px;
-    padding-bottom: 144px;
+    padding-bottom: 10px;
 
     background-color: var(--bcg-color);
     background-image: 
@@ -36,7 +36,7 @@
 }
 .subscribe-form {
     position: relative;
-    padding: 64px 252px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,11 +45,19 @@
     border: 1px solid rgba(220, 202, 135, 0.2);
     box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
 
+    @media screen and (min-width: 768px) {
+        padding: 32px 126px;
+    }
+    @media screen and (min-width: 1330px) {
+        padding: 64px 252px;
+    }
+
     &__icon {
         margin-top: 8px;
     }
     &__title {
         margin-top: 8px;
+        text-align: center;
     }
     &__form {
         margin-top: 24px;
@@ -68,11 +76,16 @@
     &__inner {
         display: flex;
         align-items: center;
+        flex-direction: column;
         gap: 32px;
         width: 100%;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
     }
     &__input {
         padding: 16px 19px;
+        width: 100%;
         flex-grow: 1;
         background-color: transparent;
 
@@ -101,18 +114,34 @@
     }
     &__logo {
         position: absolute;
-        top: -170px;
+        top: -20px;
         left: 0px;
 
         display: block;
-        width: 146px;
-        height: 146px;
+        width: 60px;
+        height: 60px;
+    
+        @media screen and (min-width: 768px) {
+            width: 73px;
+            height: 73px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            width: 146px;
+            height: 146px;
+            top: -170px;
+        }
     }
 }
 .contact-info {
     margin-top: 128px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 32px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 
     .contact {
         margin-top: 25px;
@@ -131,6 +160,12 @@
             font-feature-settings: 'tnum' on, 'lnum' on;
 
             color: #F5EFDB;
+            @media screen and (min-width: 768px) {
+                font-size: 18px;
+            }
+            @media screen and (min-width: 1330px) {
+                font-size: 32px;
+            }
         }
 
         &__list {
@@ -153,20 +188,35 @@
         flex-direction: column;
         align-items: center;
         &__title {
-            @include font-title($ff: var(--title-fonts), $fw: 700, $ls: 0.04em);
+            @include font-subtitle($fs: 64px, $lh: 83px,);
             text-align: center;
             text-transform: uppercase;
             color: var(--main-color);
+            @media screen and (min-width: 768px) {
+                @include tablet-font-subtitle($fs: 32px, $lh: 41px, );
+            }
+            @media screen and (min-width: 1330px) {
+                @include font-subtitle($fs: 64px, $lh: 83px, );
+            }
         }
         &__text {
             margin-top: 32px;
-            width: 438px;
+            width: 320px;
 
             text-align: center;
             font-family: var(--main-fonts);
             @include font-text($fs: 18px, $lh: 30px, $ls: 0.06em);
             color: var(--title-text-color);
-        }
+            @media screen and (min-width: 768px) {
+                width: 200px;
+                @include tablet-font-text($fs: 12px, $lh: 24px, $ls: 0.06em);
+            }
+        
+            @media screen and (min-width: 1330px) {
+                width: 438px;
+                @include font-text($fs: 18px, $lh: 30px, $ls: 0.06em);
+            }
+    }
         &__icon {
             margin-top: 16px;
         }

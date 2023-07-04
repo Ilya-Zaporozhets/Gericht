@@ -1,31 +1,25 @@
 .about {
-    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        padding-top: 170px;
+        padding-bottom: 170px;
+    }
+    @media screen and (min-width: 1330px) {
     padding-top: 339px;
     padding-bottom: 339px;
-
-    background-color: var(--bcg-color);
-    background-image: 
-        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
-        -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
-        url("../img/section-bg.avif") 1x,
-        url("../img/section-bg@2x.webp") 2x,
-        url("../img/section-bg.webp") 1x,
-        url("../img/section-bg@2x.jpg") 2x,
-        url("../img/section-bg.jpg") 1x);
-    background-image: 
-        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
-        image-set(url("../img/section-bg@2x.avif") 2x,
-        url("../img/section-bg.avif") 1x,
-        url("../img/section-bg@2x.webp") 2x,
-        url("../img/section-bg.webp") 1x,
-        url("../img/section-bg@2x.jpg") 2x,
-        url("../img/section-bg.jpg") 1x);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    }
     &__wrapper {
+        margin: auto;
         position: relative;
         display: flex;
-        gap: 254px;
+        gap: 50px;
+        @media screen and (min-width: 768px) {
+            gap: 124px;
+        }
+        @media screen and (min-width: 1330px) {
+            gap: 254px;
+        }
         &::before {
             position: absolute;
             content: '';
@@ -34,8 +28,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            width: 391px;
-            height: 703px;
+            width: 180px;
+            height: 300px;
 
             background-image: -webkit-image-set(url("../img/about-knives@2x.avif") 2x,
                     url("../img/about-knives.avif") 1x,
@@ -61,9 +55,17 @@
                     url("../img/about-g.webp") 1x,
                     url("../img/about-g@2x.png") 2x,
                     url("../img/about-g.png") 1x);
-            background-size: 84px 703px, 391px 415px;
+            background-size: 21.48% 100%, 100% 59.03%;
             background-repeat: no-repeat;
             background-position: center;
+            @media screen and (min-width: 768px) {
+                width: 250px;
+                height: 450px;
+            }
+            @media screen and (min-width: 1330px) {
+                width: 391px;
+                height: 703px;
+            }
         }
     }
     &__inner {
@@ -88,9 +90,13 @@
     &__text {
         margin-top: 32px;
         max-width: 523px;
+        height: 200px;
         font-family: var(--main-fonts);
         @include font-text;
         color: var(--primary-text-color);
+        @media screen and (min-width: 768px) {
+            height: auto;
+        }
     }
     &__btn {
         margin-top: 32px;

@@ -1,11 +1,21 @@
 .menu {
-    padding-top: 139px;
-    padding-bottom: 160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--bcg-color);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1330px) {
+        padding-top: 139px;
+        padding-bottom: 160px;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -28,11 +38,17 @@
     position: relative;
     margin-top: 64px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-
     width: 100%;
+    gap: 50px;
+    @media screen and (min-width: 768px) {
+        gap: 100px;
+        flex-direction: row;
+    }
 
     &::before {
+        display: none;
         content: '';
         margin: auto;
         position: absolute;
@@ -60,6 +76,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        @media screen and (min-width: 1330px) {
+            display: block;
+        }
     }
     &__wrapper {
         display: flex;
@@ -68,11 +87,19 @@
         z-index: 1;
     }
     &__title {
-        @include font-title($fs: 45px, $lh: 58px, $ls: 0.04em);
+        @include mobile-font-subtitle($fs: 45px, $lh: 58px, $ls: 0.04em);
         color: var(--title-text-color);
+        @media screen and (min-width: 768px) {
+            @include tablet-font-subtitle($fs: 45px, $lh:58px, $ls: 0.04em);
+        }
+        @media screen and (min-width: 1330px) {
+            @include font-subtitle($fs: 45px, $lh: 58px, $ls: 0.04em);
+        }
+
     }
     &__list {
         margin-top: 48px;
+        width: 100%;
     }
     &__item {
         margin-bottom: 41.5px;
@@ -83,12 +110,22 @@
     &__inner {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 32px;
     }
     &__subtitle {
-        width: 192px;
-        @include font-subtitle;
+        width: 80px;
+        @include mobile-font-subtitle;
         color: var(--main-color);
+        @media screen and (min-width: 768px) {
+            @include tablet-font-subtitle;
+            width: 100px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            @include font-subtitle;
+            width: 192px;
+        }
     }
     &__icon {
         display: block;
@@ -96,10 +133,16 @@
         height: 2px;
     }
     &__price {
-        @include font-subtitle;
         text-transform: capitalize;
         color: var(--title-text-color);
         font-feature-settings: 'tnum' on, 'lnum' on;
+        @include mobile-font-subtitle;
+        @media screen and (min-width: 768px) {
+            @include tablet-font-subtitle;
+        }
+        @media screen and (min-width: 1330px) {
+            @include font-subtitle;
+        }
     }
     &__text {
         margin-top: 8px;

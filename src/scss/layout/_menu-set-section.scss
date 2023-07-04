@@ -1,6 +1,6 @@
 .menu-set {
-    padding-top: 254px;
-    padding-bottom: 269px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     background-color: var(--bcg-color);
     background-image:
@@ -19,9 +19,20 @@
             url("../img/menu-set-bg.webp") 1x,
             url("../img/menu-set-bg@2x.jpg") 2x,
             url("../img/menu-set-bg.jpg") 1x);
-    background-size: 1920px 900px;
+    background-size: 600px 300px;
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-size: 1100px 500px;
+    }
+
+    @media screen and (min-width: 1330px) {
+        padding-top: 254px;
+        padding-bottom: 269px;
+        background-size: 1920px 900px;
+    }
 
 
     &__wrapper {
@@ -31,18 +42,35 @@
         margin: 0 auto;
         padding-left: 30px;
         padding-right: 30px;
+    
     }
 
     &__list {
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 64px;
+        gap: 24px;
+        max-width: 500px;
+        @media screen and (min-width: 768px) {
+            gap: 64px;
+            max-width: 668px;
+        }
+        @media screen and (min-width: 1330px) {
+            max-width: 1330px;
+        }
     }
     &__link {
         position: relative;
-        @include font-title;
+        @include mobile-font-title;
         color: var(--title-text-color);
+        @media screen and (min-width: 768px) {
+            @include tablet-font-title;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            @include font-title;
+        }
         
         &:hover::after {
                 opacity: 1;
@@ -64,11 +92,22 @@
     }
     &__logo {
         position: absolute;
-        top: -246px;
+        top: -60px;
         left: 0px;
     
         display: block;
-        width: 146px;
-        height: 146px;
+        width: 60px;
+        height: 60px;
+    
+        @media screen and (min-width: 768px) {
+            width: 73px;
+            height: 73px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            width: 146px;
+            height: 146px;
+            top: -276px;
+        }
     }
 }

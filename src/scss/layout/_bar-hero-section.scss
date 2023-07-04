@@ -1,6 +1,9 @@
 .bar-hero {
     margin: auto;
-    padding-bottom: 138px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 1330px) {
+        padding-bottom: 138px;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -8,7 +11,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        height: 1100px;
+        height: 460px;
         background-color: var(--bcg-color);
         background-image: 
             linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
@@ -28,6 +31,13 @@
             url("../img/section-bg.jpg") 1x);
         background-size: cover;
         background-repeat: no-repeat;
+        @media screen and (min-width: 768px) {
+            height: 700px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            height: 1100px;
+        }
     }
     &__wrapper {
         position: relative;
@@ -38,23 +48,44 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 1110px;
+        width: 320px;
 
         color: var(--title-text-color);
-        font-size: 181px;
+        font-size: 51px;
         font-family: var(--title-fonts);
         font-weight: 700;
         line-height: 130%;
-        letter-spacing: 9.05px;
+        letter-spacing: 3.05px;
         text-transform: capitalize;
         text-shadow: 0px 0px 1px #000000;
+        text-align: center;
         z-index: 2;
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            font-size: 100px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            width: 1110px;
+            font-size: 181px;
+            letter-spacing: 9.05px;
+        }
     }
     &__swiper {
         margin-left: auto;
         margin-right: auto;
-        width: 634px;
-        height: 840px;
+        width: 260px;
+        height: 340px;
+        pointer-events: none;
+        @media screen and (min-width: 768px) {
+            width: 450px;
+            height: 580px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            width: 634px;
+            height: 840px;
+        }
     }
     &__list {
         position: relative;
@@ -63,12 +94,13 @@
     &__item {
         position: relative;
         overflow: hidden;
+        pointer-events: none;
     }
 }
 .pagination {
     position: absolute;
     bottom: 0;
-    right: -100px;
+    right: -130px;
 
     transform: rotate(90deg);
     display: flex;
@@ -78,6 +110,9 @@
 
     width: 300px;
     transition: var(--transition-property);
+    @media screen and (min-width: 768px) {
+        right: -100px;
+    }
 
     &__text {
         display: flex;

@@ -1,7 +1,6 @@
 .happy-hours {
     margin: auto;
-    height: 900px;
-
+    height: 400px;
     background-color: var(--bcg-color);
     background-image: -webkit-image-set(url("../img/happy-hours-bg@2x.avif")2x,
             url("../img/happy-hours-bg.avif")1x,
@@ -15,9 +14,17 @@
             url("../img/happy-hours-bg.webp") 1x,
             url("../img/happy-hours-bg@2x.jpg") 2x,
             url("../img/happy-hours-bg.jpg") 1x);
-    background-size: 1920px 900px;
+    background-size: 768px 400px;
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (min-width: 768px) {
+        height: 600px;
+        background-size: 1330px 600px;
+    }
+    @media screen and (min-width: 1330px) {
+        height: 900px;
+        background-size: 1920px 900px;
+    }
     &__wrapper {
         display: flex;
         height: 100%;
@@ -28,12 +35,22 @@
     }
     &__title {
         color: var(--main-color);
-        @include font-title($fs: 128px, $lh: 166.4px, $ls: 3.84px);
+        @include font-title($fs: 51px, $lh: 70px, $ls: 3.84px);
         text-transform: capitalize;
+        @media screen and (min-width: 768px) {
+            @include font-title($fs: 80px, $lh: 92px, $ls: 3.84px);
+        }
+    
+        @media screen and (min-width: 1330px) {
+            @include font-title($fs: 128px, $lh: 166.4px, $ls: 3.84px);
+        }
     }
     &__subtitle {
         color: var(--title-text-color);
-        @include font-subtitle($fs: 32px, $lh: 41.6px, $ls: 1.28px);
+        @include font-subtitle($fs: 18px, $lh: 32px, $ls: 1.28px);
         text-transform: capitalize;
+        @media screen and (min-width: 768px) {
+            @include font-subtitle($fs: 32px, $lh: 41.6px, $ls: 1.28px);
+        }
     }
 }
