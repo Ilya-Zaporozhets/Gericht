@@ -1,26 +1,16 @@
 .feedback {
-    padding-top: 128px;
-    padding-bottom: 128px;
-
-    background-image: 
-        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
-        -webkit-image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x,
-        url("../img/section-bg.avif") type("image/avif") 1x,
-        url("../img/section-bg@2x.webp") type("image/webp") 2x,
-        url("../img/section-bg.webp") type("image/webp") 1x,
-        url("../img/section-bg@2x.jpg") 2x,
-        url("../img/section-bg.jpg") 1x);
-    background-image: 
-        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
-        image-set(url("../img/section-bg@2x.avif") type("image/avif") 2x,
-        url("../img/section-bg.avif") type("image/avif") 1x,
-        url("../img/section-bg@2x.webp") type("image/webp") 2x,
-        url("../img/section-bg.webp") type("image/webp") 1x,
-        url("../img/section-bg@2x.jpg") 2x,
-        url("../img/section-bg.jpg") 1x);
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
     z-index: -2;
+    @media screen and (min-width: 768px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1330px) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
 
     &__wrapper {
         position: relative;
@@ -32,7 +22,7 @@
             content: '';
             top: 0;
             right: 0;
-            display: block;
+            display: none;
             
             height: 100%;
             width: 37.2%;
@@ -53,18 +43,18 @@
                     url("../img/awards-img.jpg") 1x);
             background-size: 100%;
             background-repeat: no-repeat;
-            background-position: right;
-    
-            // border: 2px solid rgba(220, 202, 135, 0.2);
+            background-position: right;;
             z-index: -1;
+            @media screen and (min-width: 1330px) {
+                display: block;
+            }
         }
-    
         &::after {
             position: absolute;
             content: '';
             bottom: 0px;
             right: 15%;
-
+            display: none;
             width: 27.69%;
             height: 54.85%;
     
@@ -86,18 +76,33 @@
             background-repeat: no-repeat;
             background-position: center;
             opacity: 0.9;
+            @media screen and (min-width: 1330px) {
+                display: block;
+            }
         }
     }
 }
 .feedback {
     &__form {
-        padding-top: 145.5px;
-        padding-bottom: 145.5px;
+        margin: auto;
+        padding-top: 45.5px;
+        padding-bottom: 45.5px;
         display: flex;
         flex-direction: column;
         gap: 32px;
 
-        width: 635px;
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            width: 635px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            margin: 0;
+            padding-top: 145.5px;
+            padding-bottom: 145.5px;
+        }
     }
     &__input {
         padding: 20px 16px;
@@ -129,6 +134,10 @@
     }
     &__btn {
         width: 129px;
+        margin: auto;
+        @media screen and (min-width: 1330px) {
+            margin: 0;
+        }
     }
 
 }

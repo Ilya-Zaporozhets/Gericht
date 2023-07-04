@@ -1,11 +1,23 @@
 .main-title {
-    @include font-title;
     font-feature-settings: 'tnum' on, 'lnum' on;
     color: var(--main-color);
     text-transform: capitalize;
+    @include mobile-font-title;
+    @media screen and (min-width: 768px) {
+        @include tablet-font-title;
+    }
+    @media screen and (min-width: 1330px) {
+        @include font-title;
+    }
 }
 .main-subtitle{
-    @include font-subtitle;
+    @include mobile-font-subtitle;
     font-feature-settings: 'tnum' on, 'lnum' on;
     color: var(--title-text-color);
+    @media screen and (min-width: 768px) {
+        @include tablet-font-subtitle;
+    }
+    @media screen and (min-width: 1330px) {
+        @include font-subtitle;
+    }
 }

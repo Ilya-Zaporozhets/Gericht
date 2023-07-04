@@ -14,6 +14,7 @@ if (barSwiperElement) {
     keyboard: {
       enabled: false,
     },
+    allowTouchMove: false,
     autoHeight: false,
     slidesPerView: 1,
     spaceBetween: 0,

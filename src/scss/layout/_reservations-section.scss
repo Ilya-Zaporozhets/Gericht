@@ -1,7 +1,11 @@
 .reservations {
-    padding-top: 159px;
-    padding-bottom: 152px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: var(--bcg-color);
+    @media screen and (min-width: 1330px) {
+        padding-top: 159px;
+        padding-bottom: 152px;
+    }
     &__wrapper {
         position: relative;
         padding-top: 48px;
@@ -31,24 +35,46 @@
     }
     &__logo {
         position: absolute;
-        top: -176px;
+        top: -60px;
         right: 0px;
 
         display: block;
-        width: 146px;
-        height: 146px;
+        width: 60px;
+        height: 60px;
+    
+        @media screen and (min-width: 768px) {
+            width: 73px;
+            height: 73px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            width: 146px;
+            height: 146px;
+            top: -176px;
+        }
     }
 }
 .reservations-form {
-    margin-top: 64px;
-    padding-left: 32px;
-    padding-right: 32px;
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 32px;
     width: 100%;
+    @media screen and (min-width: 768px) {
+        margin-top: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
+        flex-direction: row;
+    }
     &__inner {
         position: relative;
-        width: calc((100% - 64px)/3);
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 64px)/3);
+        }
     }
     &__item {
         padding: 16px;
