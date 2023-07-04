@@ -1,7 +1,11 @@
 .reservations {
-    padding-top: 159px;
-    padding-bottom: 152px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: var(--bcg-color);
+    @media screen and (min-width: 1330px) {
+        padding-top: 159px;
+        padding-bottom: 152px;
+    }
     &__wrapper {
         position: relative;
         padding-top: 48px;

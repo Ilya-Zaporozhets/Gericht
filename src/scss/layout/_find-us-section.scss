@@ -1,49 +1,41 @@
 .find-us {
-    margin: auto;
-    padding-top: 128px;
-    padding-bottom: 128px;
-
-    background-color: var(--bcg-color);
-    background-image: 
-        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
-        -webkit-image-set(url("../img/section-bg@2x.avif") 2x,
-        url("../img/section-bg.avif") 1x,
-        url("../img/section-bg@2x.webp") 2x,
-        url("../img/section-bg.webp") 1x,
-        url("../img/section-bg@2x.jpg") 2x,
-        url("../img/section-bg.jpg") 1x);
-    background-image: 
-        linear-gradient(18deg, rgba(4, 4, 4, 0.5) 0%, rgba(4, 4, 4, 0.5) 100%),
-        image-set(url("../img/section-bg@2x.avif") 2x,
-        url("../img/section-bg.avif") 1x,
-        url("../img/section-bg@2x.webp") 2x,
-        url("../img/section-bg.webp") 1x,
-        url("../img/section-bg@2x.jpg") 2x,
-        url("../img/section-bg.jpg") 1x);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    @media screen and (min-width: 1330px) {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
     &__wrapper {
         padding-top: 24px;
         padding-bottom: 24px;
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        @media screen and (min-width: 768px) {
+            justify-content: space-between;
+        }
     }
     &__icon {
         margin-top: 8px;
     }
     &__text {
-        margin-top: 64px;
+        margin-top: 24px;
         font-family: var(--main-fonts);
         @include font-text;
         color: var(--primary-text-color);
+        @media screen and (min-width: 768px) {
+            margin-top: 64px;
+        }
     }
     &__inner {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            align-items: flex-start;
+        }
     }
     &__btn {
         margin-top: 64px;
@@ -53,6 +45,10 @@
     &__image {
         position: relative;
         z-index: 0;
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
         &::before {
             content: '';
     
