@@ -42,15 +42,22 @@
         margin: 0 auto;
         padding-left: 30px;
         padding-right: 30px;
+    
     }
 
     &__list {
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 24px;
+        max-width: 500px;
         @media screen and (min-width: 768px) {
             gap: 64px;
+            max-width: 668px;
+        }
+        @media screen and (min-width: 1330px) {
+            max-width: 1330px;
         }
     }
     &__link {
