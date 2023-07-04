@@ -1,6 +1,6 @@
 .pages-hero {
-    padding-top: 254px;
-    padding-bottom: 254px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background-color: var(--bcg-color);
     background-image: 
         linear-gradient(152deg, rgba(12, 11, 8, 0.5) 50%, rgba(12, 11, 8, 0.5) 50%),
@@ -22,9 +22,20 @@
         url("../img/pages-hero@2x.jpg") 2x,
         url("../img/pages-hero.jpg") 1x
         );
-  background-size: 1920px ;
+  background-size: 768px;
   background-repeat: no-repeat;
   background-position: center;
+    @media screen and (min-width: 768px) {
+        padding-top: 127px;
+        padding-bottom: 127px;
+        background-size: 1330px;
+    }
+
+    @media screen and (min-width: 1330px) {
+        padding-top: 254px;
+        padding-bottom: 254px;
+        background-size: 1920px;
+    }
 
     &__wrapper {
     display: flex;
@@ -34,9 +45,16 @@
     &__title {
     color: var(--main-color);
     text-align: center;
-    @include font-subtitle($fs: 90px, $lh: 117px, $ls: 3.6px);
+    @include font-subtitle($fs: 51px, $lh:65px, $ls: 3.6px);
     text-transform: capitalize;
     text-shadow: 0 0 2px #000000;
+    @media screen and (min-width: 768px) {
+        @include font-subtitle($fs: 60px, $lh: 75px, $ls: 3.6px);
+    }
+
+    @media screen and (min-width: 1330px) {
+        @include font-subtitle($fs: 90px, $lh: 117px, $ls: 3.6px);
+    }
     }
     &__list {
         display: flex;
@@ -48,10 +66,11 @@
         gap: 8px;
         &::after {
             content: url(../img/icons.svg#arrow-right);
-            padding: 5px;
+            padding: 4px 3px;
             display: block;
             width: 24px;
             height: 24px;
+            
         }
         &:last-child {
             &::after {
@@ -61,8 +80,15 @@
     }
     &__link {
         color: var(--title-text-color);
-        @include font-subtitle;   
+        @include mobile-font-subtitle;   
         transition: var(--transition-property);
+        @media screen and (min-width: 768px) {
+            @include tablet-font-subtitle;
+        }
+
+        @media screen and (min-width: 1330px) {
+            @include font-subtitle;
+        }
         &:hover,
         &:focus {
             opacity: .4;
