@@ -107,6 +107,75 @@
                 <span>Book Table</span>
             </button>
         </div>
+        <button type="button" class="nav-menu" data-menu-button>
+            <svg class="nav-menu__icon">
+              <use href="./img/icons.svg#menu"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="mobile-menu" data-menu>
+        <button class="mobile-menu__close-button" type="button" data-menu-close>
+            <svg class="icon">
+                <use href="./img/icons.svg#cross"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+                <a href="./" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Home
+                </a>
+                <ul class="mobile-menu__sublist list">
+                    <li class="mobile-menu__subitem">
+                        <a href="./bar.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            Bar
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="javascript:void(0)" class="mobile-menu__link link visually-hidden">
+                    Pages
+                </a>
+                <ul class="mobile-menu__sublist list">
+                    <li class="mobile-menu__subitem">
+                        <a href="./our-service.html" class="mobile-menu__link link" target="_self"
+                            rel="noopener noreferrer">
+                            Our Services
+                        </a>
+                    </li>
+                    <li class="mobile-menu__subitem">
+                        <a href="./about-us.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="mobile-menu__subitem">
+                        <a href="./our-team.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            Our team
+                        </a>
+                    </li>
+                    <li class="mobile-menu__subitem">
+                        <a href="./faq.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./contact-us.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Contact Us
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./blog.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Blog
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./coming-soon.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Landing
+                </a>
+            </li>
+        </ul>
     </div>
 </header>
 
@@ -156,7 +225,92 @@
     </main>
 
 
-   
+      <footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="subscribe-form">
+            <h3 class="subscribe-form__subtitle main-subtitle">Newsletter</h3>
+            <svg class="subscribe-form__icon icon-spoon">
+                <use href="./img/icons.svg#spoon"></use>
+            </svg>
+            <h4 class="subscribe-form__title main-title">Subscribe to Our Newsletter</h4>
+            <form class="subscribe-form__form">
+                <h3 class="title">And never miss latest Updates!</h3>
+                <div class="subscribe-form__inner">
+                    <input type="email" name="email" class="subscribe-form__input" placeholder="Email Address" id="user_email_sub"
+                        required>
+                    <button type="submit" class="subscribe-form__btn main-btn">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+            <svg class="subscribe-form__logo">
+                <use href="./img/icons.svg#logo"></use>
+            </svg>
+        </div>
+        <div class="contact-info">
+            <div class="contact">
+                <h3 class="contact__title">Contact Us</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <address class="contact__text">
+                            9 W 53rd St, New York,<br> NY 10019, USA
+                        </address>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+12123441230" class="contact__text link">
+                            +1 212-555-1230
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gericht">
+                <h2 class="gericht__title">Gerícht</h2>
+                <p class="gericht__text">"The best way to find yourself is to lose yourself in the service of others.”</p>
+                <svg class="gericht__icon icon-spoon">
+                    <use href="./img/icons.svg#spoon"></use>
+                </svg>
+                <ul class="social__list list">
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="social__item">
+                        <svg class="social__icon">
+                            <use href="./img/icons.svg#instagram"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3 class="contact__title">Working Hours</h3>
+                <ul class="contact__list list">
+                    <li class="contact__item">
+                        <p class="contact__text">Monday-Friday:<br>
+                        08:00 am -12:00 am</p>
+                    </li>
+                    <li class="contact__item">
+                        <p class="contact__text">Saturday-Sunday:<br>
+                        07:00am -11:00 pm</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__all-rights">2021 Gerícht. All Rights reserved.</p>
+    </div>
+
+</footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>

@@ -107,6 +107,75 @@
                 <span>Book Table</span>
             </button>
         </div>
+        <button type="button" class="nav-menu" data-menu-button>
+            <svg class="nav-menu__icon">
+              <use href="./img/icons.svg#menu"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="mobile-menu" data-menu>
+        <button class="mobile-menu__close-button" type="button" data-menu-close>
+            <svg class="icon">
+                <use href="./img/icons.svg#cross"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+                <a href="./" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Home
+                </a>
+                <ul class="mobile-menu__sublist list">
+                    <li class="mobile-menu__subitem">
+                        <a href="./bar.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            Bar
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="javascript:void(0)" class="mobile-menu__link link visually-hidden">
+                    Pages
+                </a>
+                <ul class="mobile-menu__sublist list">
+                    <li class="mobile-menu__subitem">
+                        <a href="./our-service.html" class="mobile-menu__link link" target="_self"
+                            rel="noopener noreferrer">
+                            Our Services
+                        </a>
+                    </li>
+                    <li class="mobile-menu__subitem">
+                        <a href="./about-us.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="mobile-menu__subitem">
+                        <a href="./our-team.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            Our team
+                        </a>
+                    </li>
+                    <li class="mobile-menu__subitem">
+                        <a href="./faq.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./contact-us.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Contact Us
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./blog.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Blog
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./coming-soon.html" class="mobile-menu__link link" target="_self" rel="noopener noreferrer">
+                    Landing
+                </a>
+            </li>
+        </ul>
     </div>
 </header>
 
@@ -237,7 +306,7 @@
   </div>
 </section>
 
-      <section class="about">
+      <section class="about section_bg">
     <div class="about__wrapper container">
         <div class="about__inner left">
             <h3 class="about__title main-title">
@@ -512,7 +581,7 @@
     </div>
 </section>
 
-      <section class="chefs">
+      <section class="chefs section_bg">
     <div class="chefs__wrapper container">
         <picture class="chefs__image">
           <source srcset="./img/Kevin-Luo.avif 1x, ./img/Kevin-Luo@2x.avif 2x" type="image/avif">
@@ -559,9 +628,6 @@
                     <h3 class="customers-list__name">Wade Warren</h3>
                     <p class="customers-list__prof">Sommelier</p>
                 </div>
-                <svg class="customers-list__apostrophe">
-                    <use href="./img/icons.svg#apostrophe"></use>
-                </svg>
             <li class="customers-list__item">
                 <picture class="customers-list__image">
                     <source srcset="./img/customers-jane.avif 1x, ./img/customers-jane@2x.avif 2x" type="image/avif">
@@ -576,9 +642,6 @@
                     <h3 class="customers-list__name">Jane Cooper</h3>
                     <p class="customers-list__prof">Chef</p>
                 </div>
-                <svg class="customers-list__apostrophe">
-                    <use href="./img/icons.svg#apostrophe"></use>
-                </svg>
             </li>
             <li class="customers-list__item">
                 <picture class="customers-list__image">
@@ -594,9 +657,6 @@
                     <h3 class="customers-list__name">Robert Fox</h3>
                     <p class="customers-list__prof">Chef</p>
                 </div>
-                <svg class="customers-list__apostrophe">
-                    <use href="./img/icons.svg#apostrophe"></use>
-                </svg>
             </li>
             <li class="customers-list__item">
                 <picture class="customers-list__image">
@@ -612,9 +672,6 @@
                     <h3 class="customers-list__name">Brooklyn Simmons</h3>
                     <p class="customers-list__prof">Caterer</p>
                 </div>
-                <svg class="customers-list__apostrophe">
-                    <use href="./img/icons.svg#apostrophe"></use>
-                </svg>
             </li>
         </ul>
         <svg class="testimony__logo">
@@ -623,7 +680,7 @@
     </div>
 </section>
       <section class="video">   
-    <div class="video-container container">
+    <div class="video-container">
           <video
         id="video-player"
         class="video-player"
@@ -645,7 +702,7 @@
     </div>  
 </section>
 
-      <section class="awards">
+      <section class="awards section_bg">
     <div class="awards__wrapper container">
         <h3 class="awards__subtitle main-subtitle">Awards & Recognition</h3>
         <svg class="awards__icon icon-spoon">
@@ -759,7 +816,7 @@
         </svg>
     </div>
 </section>
-      <section class="gallery section">
+      <section class="gallery section_bg">
   <div class="gallery__wrapper container">
     <div class="gallery__description">
       <p class="gallery__insta">Instagram</p>
@@ -862,30 +919,6 @@
             </div>
           </a>
         </li>
-
-        <li class="gallery__item">
-          <picture>
-            <source
-              srcset="img/slaider-glass.avif 1x, img/slaider-glass@2x.avif 2x"
-              type="image/avif"
-            />
-            <source
-              srcset="img/slaider-glass.webp 1x, img/slaider-glass@2x.webp 2x"
-              type="image/webp"
-            />
-            <source
-              srcset="img/slaider-glass.jpg 1x, img/slaider-glass@2x.jpg 2x"
-            />
-            <img class="" src="img/slaider-glass.jpg" alt="" />
-          </picture>
-          <a href="./coming-soon.html" class="gallery__link links">
-            <div class="gallery__link_overlay">
-              <svg class="">
-                <use href="img/icons.svg#instagram"></use>
-              </svg>
-            </div>
-          </a>
-        </li>
       </ul>
     </div>
   </div>
@@ -924,7 +957,7 @@
                 <ul class="contact__list list">
                     <li class="contact__item">
                         <address class="contact__text">
-                            9 W 53rd St, New York, NY 10019, USA
+                            9 W 53rd St, New York,<br> NY 10019, USA
                         </address>
                     </li>
                     <li class="contact__item">
