@@ -1,10 +1,61 @@
-@mixin font-title($ff: var(--secondary-fonts), $fw: 600,$fs: 64px,$lh: 83px, $ls: 0.03em) {
+// ====================================== 320 PX ==================================================
+@mixin mobile-font-title($ff: var(--secondary-fonts), $fw: 600, $fs: 23px, $lh: 30px, $ls: 0.03em) {
     font-family: $ff;
     font-weight: $fw;
     font-size: $fs;
     line-height: calc($lh/$fs);
     letter-spacing: $ls;
 }
+
+@mixin mobile-font-subtitle($ff: var(--title-fonts), $fw: 700, $fs: 14px, $lh: 24px, $ls: 0.04em) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+    letter-spacing: $ls;
+}
+
+@mixin mobile-font-text($fw: 400, $fs: 12px, $lh: 16px, $ls: 0.04em) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+    letter-spacing: $ls;
+}
+
+// ====================================== 768 PX ==================================================
+@mixin tablet-font-title($ff: var(--secondary-fonts), $fw: 600, $fs: 32px, $lh: 40px, $ls: 0.03em) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+    letter-spacing: $ls;
+}
+
+@mixin tablet-font-subtitle($ff: var(--title-fonts), $fw: 700, $fs: 16px, $lh: 23px, $ls: 0.04em) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+    letter-spacing: $ls;
+}
+
+@mixin tablet-font-text($fw: 400, $fs: 12px, $lh: 20px, $ls: 0.04em) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+    letter-spacing: $ls;
+}
+
+
+// ====================================== 1330 PX ==================================================
+@mixin font-title($ff: var(--secondary-fonts), $fw: 600, $fs: 64px, $lh: 83px, $ls: 0.03em) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: calc($lh/$fs);
+    letter-spacing: $ls;
+}
+
 @mixin font-subtitle($ff: var(--title-fonts), $fw: 700, $fs: 23px, $lh: 28px, $ls: 0.04em) {
     font-family: $ff;
     font-weight: $fw;
@@ -12,6 +63,7 @@
     line-height: calc($lh/$fs);
     letter-spacing: $ls;
 }
+
 @mixin font-text($fw: 400, $fs: 16px, $lh: 28px, $ls: 0.04em) {
     font-weight: $fw;
     font-size: $fs;

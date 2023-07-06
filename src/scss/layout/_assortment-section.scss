@@ -1,7 +1,11 @@
 .assortment {
-    padding-top: 201px;
-    padding-bottom: 142px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     background-color: var(--bcg-color);
+    @media screen and (min-width: 1330px) {
+        padding-top: 201px;
+        padding-bottom: 142px;
+    }
 
     &__wrapper {
         display: flex;
@@ -23,6 +27,7 @@
         position: relative;
         background-color: #C4C4C4;
         border: 0.5px solid rgba(220, 202, 135, 0.4);
+        overflow: hidden;
 
         .title {
             position: absolute;
@@ -35,12 +40,14 @@
             justify-content: center;
             background-color: rgba(12, 12, 12, 0.4);
 
-            @include font-title($fs: 45px, $lh: 58px, $ls: 0.04em);
+            @include font-title($fs: 24px, $lh: 32px, $ls: 0.04em);
             color: var(--title-text-color);
 
             opacity: 0;
             transition: var(--transition-property);
-
+            @media screen and (min-width: 768px) {
+                @include font-title($fs: 45px, $lh: 58px, $ls: 0.04em);
+            }
             &:hover,
             &:focus {
                 opacity: 1;

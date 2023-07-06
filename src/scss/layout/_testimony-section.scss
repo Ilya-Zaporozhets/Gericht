@@ -1,8 +1,17 @@
 .testimony {
-    padding-top: 152px;
-    padding-bottom: 152px;
+    padding-top: 52px;
+    padding-bottom: 52px;
     
     background-color: var(--bcg-color);
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media screen and (min-width: 1330px) {
+        padding-top: 152px;
+        padding-bottom: 152px;
+    }
     &__wrapper {
         position: relative;
         display: flex;
@@ -18,48 +27,87 @@
     }
     &__logo {
         position: absolute;
-        top: -202px;
+        top: -50px;
         right: 0px;
     
         display: block;
-        width: 146px;
-        height: 146px;
+        width: 60px;
+        height: 60px;
+    
+        @media screen and (min-width: 768px) {
+            width: 73px;
+            height: 73px;
+        }
+    
+        @media screen and (min-width: 1330px) {
+            width: 146px;
+            height: 146px;
+            top: -202px;
+        }
     }
 }
 .customers-list {
     margin-top: 64px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    row-gap: 64px;
+    flex-direction: column;
+    gap: 32px;
+    @media screen and (min-width: 768px) {
+        row-gap: 32px;
+    }
+    @media screen and (min-width: 1330px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        row-gap: 64px;
+    }
 
     &__item {
         position: relative;
-        width: calc((100% - 16px)/2);
-
         display: flex;
-        gap: 32px;
+        flex-direction: column;
+        gap: 8px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1330px) {
+            width: calc((100% - 16px)/2);
+            gap: 32px;
+        }
     }
-    &__apostrophe {
-        position: absolute;
-        bottom: 0;
-        left: 159px;
-        display: block;
-
-        width: 47px;
-        height: 40px;
+    &__image {
+        margin: auto;
+        position: relative;
+        &::after {
+            content: url(../img/icons.svg#apostrophe);
+            position: absolute;
+                bottom: -20px;
+                right: -23px;
+                display: block;
+            
+                width: 47px;
+                height: 40px;
+        }
     }
     &__inner {
         padding-top: 18px;
         padding-bottom: 18px;
-        width: 412px;
+        @media screen and (min-width: 768px) {
+            width: 412px;
+        }
     }
     &__text {
+        margin: auto;
+        max-width: 320px;
         font-family: var(--main-fonts);
         font-style: italic;
-        @include font-text;
+        @include tablet-font-text;
         color: var(--primary-text-color);
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: start;
+            @include font-text;
+            max-width: none;
+        }
     }
     &__name {
         margin-top: 16px;
@@ -73,11 +121,21 @@
         font-feature-settings: 'tnum' on, 'lnum' on;
         
         color: var(--main-color);
+        text-align: center;
+        
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
     }
     &__prof {
         margin-top: 4px;
         font-family: var(--main-fonts);
         @include font-text;
         color: var(--primary-text-color);
+        text-align: center;
+        
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
     }
 }
